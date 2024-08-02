@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "pack_format": 48,
+        "description": "Datapack for survival games 2"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancement/.*"
+            }
+        ]
+    }
+}
