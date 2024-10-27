@@ -1,0 +1,10 @@
+execute if score $Debug var matches 3.. run say sg:game/chests/restock/loop/actions/place_chest
+
+#called with storage sg:restock
+#only runs on first chest stock
+
+$execute store success score #SpawnChest chestRestock if predicate {condition:"random_chance",chance:$(SpawnChance)}
+$data merge block $(xyz) {Items:[],LootTable:""}
+$execute if score #SpawnChest chestRestock matches 1 run setblock $(xyz) chest[facing=$(Facing)]
+$execute unless score #SpawnChest chestRestock matches 1 run setblock $(xyz) air
+function sg:game/chests/restock/loop/actions/set_loot_table with storage sg:restock
