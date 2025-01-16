@@ -1,3 +1,6 @@
+#pause all ticking if dev enabled
+execute if score $State gameState = $Dev gameState run return fail
+
 #handle leavers
 execute as @a[scores={leave=1..}] run function sg:general/player/check_dc
 

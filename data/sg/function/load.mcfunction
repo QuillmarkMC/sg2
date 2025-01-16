@@ -1,6 +1,7 @@
 scoreboard objectives add gameState dummy
 scoreboard players set $Lobby gameState 0
 scoreboard players set $Game gameState 1
+scoreboard players set $Dev gameState 2
 execute unless score $State gameState = $Game gameState run scoreboard players operation $State gameState = $Lobby gameState
 
 scoreboard objectives add var dummy

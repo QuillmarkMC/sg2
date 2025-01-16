@@ -1,7 +1,8 @@
 {
     "pack": {
-        "pack_format": 57,
-        "description": "Datapack for survival games 2"
+        "pack_format": 61,
+        "description": "Datapack for survival games 2",
+        "supported_formats": [61, 61]
     },
     "filter": {
         "block": [
