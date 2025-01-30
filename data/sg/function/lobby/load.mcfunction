@@ -1,4 +1,5 @@
 #unload previous state
+function sg:general/change_state
 
 #set gamestate
 scoreboard players operation $State gameState = $Lobby gameState

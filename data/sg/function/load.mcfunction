@@ -18,6 +18,7 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 #lobby
 scoreboard objectives add lobbyVar dummy
 scoreboard objectives add teams dummy
+scoreboard objectives add teamID dummy
 
 #game
 scoreboard objectives add platformVar dummy
@@ -30,6 +31,10 @@ scoreboard objectives add chestRestock dummy
 scoreboard objectives add border dummy
 
 execute unless score $SetConst var matches 1.. run function sg:general/set_const
+
+#Teams
+team add spectator
+team modify spectator color dark_gray
 
 #Forceload
 function sg:general/forceload/lobby

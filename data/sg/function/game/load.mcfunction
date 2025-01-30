@@ -1,17 +1,27 @@
 #unload previous state
+function sg:general/change_state
 
 #set gamestate
 scoreboard players operation $State gameState = $Game gameState
 
+#generate spawn platforms BEFORE players are teleported and chests are placed 
+function sg:game/spawning/platforms/begin
 #set restocking BEFORE chests are generated
 scoreboard players set $Restocking chestRestock 0
 function sg:game/chests/restock/start
-#generate spawn platforms
+
+#player effects
+#spawnpoint
+#inventory
+#gamemode
+#spectator
 
 #map events
 #black box
 #bugs
 #etc
+
+#timer model
 
 #bossbar
 function sg:game/border/set_game
