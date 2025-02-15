@@ -4,5 +4,5 @@
 execute if score @s enderClick matches 1.. run function sg:lobby/teams/inventory/update
 execute if score @s dropPhantom matches 1.. run function sg:lobby/teams/inventory/update
 
-#execute if items entity @s player.cursor phantom_membrane[custom_data~{ToBeDetermined:true}] run tag @s add SGTeamSelectDetect
+execute if items entity @s player.cursor phantom_membrane[custom_data~{ToBeDetermined:true}] run advancement grant @s only sg:inv_changed
 #execute if entity @s[tag=SGTeamSelectDetect] run advancement grant @s only sg:inv_changed

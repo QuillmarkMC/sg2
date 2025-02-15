@@ -8,7 +8,7 @@ tag @s remove SGResetPlayer
 tag @s remove SGPlaying
 #reset scoreboards
 
-execute if score $State gameState = $Lobby gameState run function sg:general/player/reset/lobby
+execute if score $State gameState = $Lobby gameState in the_end run function sg:general/player/reset/lobby
 execute if score $State gameState = $Game gameState run function sg:general/player/reset/game
 
 execute at @s run spawnpoint @s ~ ~ ~ ~

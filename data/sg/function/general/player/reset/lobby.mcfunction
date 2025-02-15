@@ -2,3 +2,4 @@ tp @s 0.5 61.0 0.5 90.0 0.0
 function sg:lobby/effects/give
 scoreboard players reset @s enderClick
 function sg:lobby/inventory/reset
+gamemode adventure
