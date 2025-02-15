@@ -19,6 +19,8 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add lobbyVar dummy
 scoreboard objectives add teams dummy
 scoreboard objectives add teamID dummy
+scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
+scoreboard objectives add dropPhantom dropped:phantom_membrane
 
 #game
 scoreboard objectives add platformVar dummy
