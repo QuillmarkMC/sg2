@@ -11,3 +11,5 @@ gamerule fallDamage false
 gamerule showDeathMessages false
 gamerule naturalRegeneration true
 difficulty peaceful
+
+function sg:lobby/options/set_default
