@@ -13,3 +13,4 @@ gamerule naturalRegeneration true
 difficulty peaceful
 
 function sg:lobby/options/set_default
+execute in the_end unless block -9 68 6 chest run setblock -9 68 6 chest[facing=west]
