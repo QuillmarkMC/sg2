@@ -20,7 +20,7 @@ item replace entity @s enderchest.18 with phantom_membrane[item_model="lobby:men
 item replace entity @s enderchest.19 with air
 item replace entity @s enderchest.20 with air
 item replace entity @s enderchest.21 with phantom_membrane[item_model="lobby:menu/gui/arrow_left",custom_data={TeamSelect:true,Previous:true}]
-item replace entity @s enderchest.22 with phantom_membrane[item_model="lobby:menu/gui/plus",custom_data={TeamSelect:true}]
+item replace entity @s enderchest.22 with phantom_membrane[item_model="lobby:menu/gui/plus",custom_data={TeamSelect:true,NewTeam:true}]
 item replace entity @s enderchest.23 with phantom_membrane[item_model="lobby:menu/gui/arrow_right",custom_data={TeamSelect:true,Next:true}]
 item replace entity @s enderchest.24 with air
 item replace entity @s enderchest.25 with air
