@@ -1,6 +1,6 @@
-#formula = (MaxTeamSize)*(Current selected page) + (loop index) = TEAM LIST INDEX
+#formula = (Max teams per page)*(Current selected page) + (loop index) = TEAM LIST INDEX
 
-scoreboard players operation $TeamIndex teamGUI.Page = $MaxTeamSize options
+scoreboard players operation $TeamIndex teamGUI.Page = #14 math
 scoreboard players operation $TeamIndex teamGUI.Page *= @s teamGUI.Page
 
 scoreboard players set $LoopIndex teamGUI.Page 0
