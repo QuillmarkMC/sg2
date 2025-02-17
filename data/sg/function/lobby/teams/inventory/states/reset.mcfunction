@@ -4,4 +4,3 @@ execute if data storage sg:options {Options:[{team_mode:"team"}]} run scoreboard
 scoreboard players set @s teamGUI.Page 0
 
 function sg:lobby/teams/inventory/update
-scoreboard players reset @s enderClick
