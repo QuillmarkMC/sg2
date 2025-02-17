@@ -28,7 +28,7 @@ $item modify entity @s enderchest.$(Slot) [{\
     "function":"set_custom_data",\
     "tag":{\
         "JoinTeam":true,\
-        "TeamSelect":true\
+        "TeamSelect":true,\
         "id":$(ID),\
         "name":$(Name)\
     }\
