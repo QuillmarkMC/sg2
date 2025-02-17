@@ -1,1 +1,2 @@
-say DEBUG: previous page
+scoreboard players remove @s teamGUI.Page 1
+execute if score @s teamGUI.Page matches ..0 run scoreboard players set @s teamGUI.Page 1

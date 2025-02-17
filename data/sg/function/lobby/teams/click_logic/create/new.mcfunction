@@ -15,3 +15,4 @@ $data modify storage sg:teams Teams append value {\
 
 data modify storage sg:teams join_data set from storage sg:teams new_data
 function sg:lobby/teams/click_logic/join/team/get_data with storage sg:teams join_data
+scoreboard players set @s teamGUI.State 1

@@ -9,6 +9,7 @@ execute unless score $Debug var matches 1.. run scoreboard players set $Debug va
 
 scoreboard objectives add math dummy
 scoreboard players set #2 math 2
+scoreboard players set #14 math 14
 scoreboard players set #20 math 20
 scoreboard players set #60 math 60
 scoreboard players set #1000 math 1000
