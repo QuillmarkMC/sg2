@@ -19,5 +19,9 @@ $item modify entity @s enderchest.$(Slot) [{\
         [{"selector":"@a[team=$(ID)]","color":"white","italic":false}]\
     ],\
     "mode":"replace_all"\
+},\
+{\
+    "function":"set_components",\
+    "components":{"item_model":"lobby:menu/teams/$(Color)"}\
 }]
 
