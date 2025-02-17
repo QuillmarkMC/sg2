@@ -7,6 +7,6 @@ execute store result score $Num1 math run data get storage sg:teams Teams
 execute if score $Num1 math matches 0 run scoreboard players add $Num1 math 1
 scoreboard players remove $Num1 math 1
 scoreboard players operation $Num1 math /= #14 math
-scoreboard players add $Num1 math 1
+#scoreboard players add $Num1 math 1
 
 execute if score @s teamGUI.Page > $Num1 math run scoreboard players operation @s teamGUI.Page = $Num1 math
