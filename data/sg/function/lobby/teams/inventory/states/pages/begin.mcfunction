@@ -1,5 +1,6 @@
-#formula = (Max teams per page)*(Current selected page) + (loop index) = TEAM LIST INDEX
+execute if score $Debug var matches 3.. run say sg:lobby/teams/inventory/states/pages/begin
 
+#formula = (Max teams per page)*(Current selected page) + (loop index) = TEAM LIST INDEX
 scoreboard players operation $TeamIndex teamGUI.Page = #14 math
 scoreboard players operation $TeamIndex teamGUI.Page *= @s teamGUI.Page
 

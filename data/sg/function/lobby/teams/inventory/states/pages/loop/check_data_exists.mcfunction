@@ -1,3 +1,4 @@
+execute if score $Debug var matches 4.. run say sg:lobby/teams/inventory/states/pages/loop/check_data_exists
 #called with sg:teams page_data
 
 $execute store success score #Success teamGUI.Page if data storage sg:teams Teams[$(TeamIndex)]

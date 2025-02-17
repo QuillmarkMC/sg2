@@ -46,6 +46,7 @@ team modify spectator color dark_gray
 function sg:general/forceload/lobby
 
 #Gamerules
+#TODO: run gamerules per dimension for paper compatibility
 gamerule announceAdvancements false
 gamerule commandBlockOutput false
 gamerule disableRaids true

@@ -1,4 +1,4 @@
-execute if score $Debug var matches 1.. run say sg:lobby/teams/click_logic/create/new
+execute if score $Debug var matches 2.. run say sg:lobby/teams/click_logic/create/new
 # @s = player creating the team
 #called with sg:teams new_data
 

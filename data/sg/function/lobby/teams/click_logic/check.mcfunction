@@ -1,3 +1,5 @@
+execute if score $Debug var matches 1.. run say sg:lobby/teams/click_logic/check
+
 execute if items entity @s player.cursor phantom_membrane[minecraft:custom_data~{Previous:true}] run function sg:lobby/teams/click_logic/navigation/previous
 execute if items entity @s player.cursor phantom_membrane[minecraft:custom_data~{Next:true}] run function sg:lobby/teams/click_logic/navigation/next
 execute if items entity @s player.cursor phantom_membrane[minecraft:custom_data~{Back:true}] run function sg:lobby/teams/click_logic/navigation/back_to_main
