@@ -12,7 +12,7 @@ $item modify entity @s enderchest.$(Slot) [{\
     "function":set_lore,\
     "entity":"this",\
     "lore":[\
-        [{"text":"Click here to join the team","color":"dark_gray","italic":false}],\
+        [{"text":"Click here to join the team","color":"dark_gray","italic":true}],\
         [{"text":"Current players: ","color":"#ed771c","italic":false},{"text":"$(CurrentSize)","color":"gray","italic":false}],\
         [{"text":"Max players: ","color":"#ed771c","italic":false},{"score":{"name":"$MaxTeamSize","objective":"options"},"color":"gray","italic":false}],\
         [{"text":""}],\
