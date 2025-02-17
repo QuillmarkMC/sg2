@@ -23,5 +23,12 @@ $item modify entity @s enderchest.$(Slot) [{\
 {\
     "function":"set_components",\
     "components":{"item_model":"lobby:menu/teams/$(Color)"}\
+},\
+{\
+    "function":"set_custom_data",\
+    "tag":{\
+        "JoinTeam":true,\
+        "id":$(ID),\
+        "name":$(Name)\
+    }\
 }]
-
