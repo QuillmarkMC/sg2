@@ -23,6 +23,7 @@ scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add dropPhantom dropped:phantom_membrane
 scoreboard objectives add options dummy
 scoreboard objectives add teamGUI.State dummy
+scoreboard objectives add teamGUI.Page dummy
 
 #game
 scoreboard objectives add platformVar dummy
