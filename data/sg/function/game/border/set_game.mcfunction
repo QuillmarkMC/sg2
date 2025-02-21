@@ -1,11 +1,10 @@
 worldborder center 0 0
-#TODO: set starting value based on lobby
-worldborder set 1000
+$worldborder set $(border_starting_size)
 
-worldborder damage amount 0.5
+worldborder damage amount 0.2
 worldborder damage buffer 0
 worldborder warning time 0
-worldborder warning distance 10
+worldborder warning distance 20
 
-bossbar set border visible false
-bossbar set border players @a
+bossbar set sg:border visible false
+bossbar set sg:border players @a

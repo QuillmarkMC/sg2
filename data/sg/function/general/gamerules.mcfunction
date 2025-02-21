@@ -1,0 +1,24 @@
+gamerule announceAdvancements false
+gamerule commandBlockOutput false
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doEntityDrops false
+gamerule doFireTick false
+gamerule doInsomnia false
+gamerule doImmediateRespawn true
+gamerule doLimitedCrafting true
+gamerule doMobLoot false
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
+gamerule doTileDrops false
+gamerule doTraderSpawning false
+gamerule doWeatherCycle false
+gamerule drowningDamage true
+gamerule fireDamage true
+gamerule freezeDamage true
+gamerule maxEntityCramming 999
+gamerule mobGriefing false
+gamerule playersSleepingPercentage 101
+execute unless score $State gameState = $Dev gameState run gamerule spectatorsGenerateChunks false
+execute unless score $State gameState = $Dev gameState run gamerule sendCommandFeedback false
+gamerule spawnChunkRadius 0

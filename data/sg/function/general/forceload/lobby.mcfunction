@@ -1,1 +1,1 @@
-forceload add -11 4 36 -6
+execute in the_end run forceload add -11 4 36 -6

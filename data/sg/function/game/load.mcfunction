@@ -14,7 +14,7 @@ function sg:game/chests/restock/start
 #spawnpoint
 #inventory
 #gamemode
-#spectator
+execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectating/join
 
 #map events
 #black box
@@ -24,13 +24,18 @@ function sg:game/chests/restock/start
 #timer model
 
 #bossbar
-function sg:game/border/set_game
+function sg:game/border/set_game with storage sg:options Options
 
 #set number of players
 execute store result score $CurrentPlayers win if entity @a[tag=SGPlaying,gamemode=!spectator]
 scoreboard players operation $ExpectedPlayers win = $CurrentPlayers win
 
+#update match id
+scoreboard players add $Global matchID 1
+
 gamerule fallDamage true
 gamerule showDeathMessages true
 gamerule naturalRegeneration true
+gamerule keepInventory false
 difficulty hard
+time set 6000
