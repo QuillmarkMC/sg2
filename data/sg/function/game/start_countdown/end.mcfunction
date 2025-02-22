@@ -1,9 +1,8 @@
 #PLAYERS RELEASED, GAME BEGINS
 #start grace period
 #tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin1"},{"score":{"name":"$grace_period","objective":"options"}},{"translate":"text.game.begin2"}]
-#scoreboard players operation $countdown countdown = $grace_period options
-#function sg:game/starting/grace/countdown
-#scoreboard players set $Heartbeat countdown 0
+execute store result score $Countdown timers run data get storage sg:options Options.grace_period
+function sg:game/grace/count
 
 #VFX
 summon lightning_bolt 0 71 0

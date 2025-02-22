@@ -9,17 +9,14 @@ function sg:game/spawning/platforms/begin
 #set restocking BEFORE chests are generated
 scoreboard players set $Restocking chestRestock 0
 function sg:game/chests/restock/start
-
-#player effects
-#spawnpoint
-#inventory
-#gamemode
+function sg:game/spawning/players/check_mode
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectating/join
+function sg:game/effects/grace
+gamemode adventure @a[tag=SGPlaying]
+clear @a
+execute as @a in overworld run spawnpoint @s 0 127 1
 
 #map events
-#black box
-#bugs
-#etc
 
 #timer model
 

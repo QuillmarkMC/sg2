@@ -42,8 +42,11 @@ scoreboard objectives add combatTimer dummy
 scoreboard players set $CombatCooldown combatTimer 100
 scoreboard objectives add oob dummy
 scoreboard objectives add timers dummy
+scoreboard players set $LobbyCountdown timers 10
 
 execute unless score $SetConst var matches 1.. run function sg:general/set_const
+
+execute if score $State gameState = $Lobby gameState run function sg:lobby/options/set_default
 
 #Teams
 team add spectator
