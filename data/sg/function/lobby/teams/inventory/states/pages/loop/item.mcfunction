@@ -5,16 +5,16 @@ $item modify entity @s enderchest.$(Slot) [{\
     "function":"set_name",\
     "entity":"this",\
     "name":[\
-        {"text":"$(Name)'s Team","color":"$(Color)","italic":false,"bold":true}\
+        {"translate":"text.lobby.teams.item.team.name","color":"$(Color)","italic":false,"bold":true,with:[{text:"$(Name)"}]}\
     ]\
 },\
 {\
     "function":set_lore,\
     "entity":"this",\
     "lore":[\
-        [{"text":"Click here to join the team","color":"dark_gray","italic":true}],\
-        [{"text":"Current players: ","color":"#ed771c","italic":false},{"text":"$(CurrentSize)","color":"gray","italic":false}],\
-        [{"text":"Max players: ","color":"#ed771c","italic":false},{"score":{"name":"$MaxTeamSize","objective":"options"},"color":"gray","italic":false}],\
+        [{"translate":"text.lobby.teams.item.team.lore","color":"dark_gray","italic":true}],\
+        [{"translate":"text.lobby.teams.item.team.lore.current_players","color":"#ed771c","italic":false},{"text":"$(CurrentSize)","color":"gray","italic":false}],\
+        [{"translate":"text.lobby.teams.item.team.lore.max_players","color":"#ed771c","italic":false},{"score":{"name":"$MaxTeamSize","objective":"options"},"color":"gray","italic":false}],\
         [{"text":""}],\
         [{"selector":"@a[team=$(ID)]","color":"white","italic":false}]\
     ],\

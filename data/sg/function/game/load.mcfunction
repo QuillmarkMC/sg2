@@ -26,6 +26,7 @@ function sg:game/border/set_game with storage sg:options Options
 #set number of players
 execute store result score $CurrentPlayers win if entity @a[tag=SGPlaying,gamemode=!spectator]
 scoreboard players operation $ExpectedPlayers win = $CurrentPlayers win
+scoreboard players operation $TotalPlayers win = $CurrentPlayers win
 
 #update match id
 scoreboard players add $Global matchID 1

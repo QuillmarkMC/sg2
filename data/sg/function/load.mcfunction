@@ -43,6 +43,7 @@ scoreboard players set $CombatCooldown combatTimer 100
 scoreboard objectives add oob dummy
 scoreboard objectives add timers dummy
 scoreboard players set $LobbyCountdown timers 10
+scoreboard players set $TotalFireworks var 3
 
 execute unless score $SetConst var matches 1.. run function sg:general/set_const
 
@@ -51,6 +52,8 @@ execute if score $State gameState = $Lobby gameState run function sg:lobby/optio
 #Teams
 team add spectator
 team modify spectator color dark_gray
+team add ready
+team modify ready color dark_green
 
 #Forceload
 function sg:general/forceload/lobby

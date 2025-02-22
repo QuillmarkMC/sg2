@@ -1,6 +1,6 @@
 #PLAYERS RELEASED, GAME BEGINS
 #start grace period
-#tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin1"},{"score":{"name":"$grace_period","objective":"options"}},{"translate":"text.game.begin2"}]
+tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin","bold": false,"with": [{"nbt": "Options.grace_period","storage": "sg:options"}]}]
 execute store result score $Countdown timers run data get storage sg:options Options.grace_period
 function sg:game/grace/count
 

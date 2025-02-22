@@ -2,4 +2,4 @@
 gamerule showDeathMessages false
 kill @s
 gamerule showDeathMessages true
-tellraw @a "combat logged"
+tellraw @a [{"text":"[!] ","color":"red","bold": true},{"translate":"text.game.combat.punish","color": "white","with": [{"selector": "@s"}],"bold": false}]

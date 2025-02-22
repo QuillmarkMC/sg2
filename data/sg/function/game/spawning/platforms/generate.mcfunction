@@ -1,5 +1,4 @@
 #kill old markers, if they werent already cleared
-#execute as @e[type=marker,tag=PlayerSpawnPlatform] at @s run tp @s ~ -200 ~
 kill @e[type=marker,tag=PlayerSpawnPlatform]
 
 #input number of players, scale by 1000, then do math for float precision before scaling back by 0.001

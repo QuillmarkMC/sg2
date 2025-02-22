@@ -7,4 +7,4 @@ $execute store success score #SpawnChest chestRestock if predicate {condition:"r
 $data merge block $(xyz) {Items:[],LootTable:""}
 $execute if score #SpawnChest chestRestock matches 1 run setblock $(xyz) chest[facing=$(Facing)]
 $execute unless score #SpawnChest chestRestock matches 1 run setblock $(xyz) air
-function sg:game/chests/restock/loop/actions/set_loot_table with storage sg:restock
+execute if score #SpawnChest chestRestock matches 1 run function sg:game/chests/restock/loop/actions/set_loot_table with storage sg:restock

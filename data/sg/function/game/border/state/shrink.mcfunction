@@ -7,4 +7,4 @@ bossbar set sg:border visible true
 scoreboard players operation $State border = $Shrink border
 function sg:game/border/update
 execute as @a at @s run playsound minecraft:entity.wither.spawn record @s ~ ~ ~ 0.75 1
-#tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.border.shrink"}]
+tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.border.shrink","color": "white","bold": false}]
