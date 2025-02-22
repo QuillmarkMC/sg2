@@ -1,6 +1,6 @@
 #PLAYERS RELEASED, GAME BEGINS
 #start grace period
-tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin","bold": false,"with": [{"nbt": "Options.grace_period","storage": "sg:options"}]}]
+tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin","bold": false,"with": [{"nbt": "Options.grace_period","storage": "sg:options"}],"color": "white"}]
 execute store result score $Countdown timers run data get storage sg:options Options.grace_period
 function sg:game/grace/count
 
@@ -9,7 +9,7 @@ summon lightning_bolt 0 71 0
 execute as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 
 #Unleash the beasts
-execute as @a[tag=SGPlaying,gamemode=!spectator] at @s positioned ~-1 ~11 ~-1 run fill ~3 ~5 ~3 ~ ~ ~ air replace barrier
+execute as @a[tag=SGPlaying,gamemode=!spectator] at @s run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace barrier
 
 #assign match IDs to handle reconnecting players
 scoreboard players operation @a matchID = $Global matchID

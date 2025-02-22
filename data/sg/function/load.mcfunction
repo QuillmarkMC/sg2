@@ -47,7 +47,7 @@ scoreboard players set $TotalFireworks var 3
 
 execute unless score $SetConst var matches 1.. run function sg:general/set_const
 
-execute if score $State gameState = $Lobby gameState run function sg:lobby/options/set_default
+function sg:lobby/options/set_default
 
 #Teams
 team add spectator
@@ -57,6 +57,10 @@ team modify ready color dark_green
 
 #Forceload
 function sg:general/forceload/lobby
+function sg:general/forceload/cornucopia
+
+#bossbar
+function sg:game/border/init_bossbar
 
 #Gamerules
 execute in overworld run function sg:general/gamerules

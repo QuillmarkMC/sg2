@@ -3,4 +3,4 @@ execute store result bossbar sg:border max run scoreboard players get $Timer bor
 bossbar set sg:border visible true
 scoreboard players operation $State border = $Deathmatch border
 execute as @a at @s run playsound minecraft:entity.elder_guardian.curse record @s ~ ~ ~ 1 0.5
-tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.deathmatch.begin","with": [{"score": {"name": "$Timer","objective": "border"}}],"bold": false}]
+tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.deathmatch.begin","with": [{"score": {"name": "$Timer","objective": "border"}}],"bold": false,"color": "white"}]
