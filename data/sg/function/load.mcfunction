@@ -28,7 +28,6 @@ scoreboard objectives add teamGUI.Page dummy
 
 #game
 scoreboard objectives add platformVar dummy
-execute unless score $NumPlayers platformVar matches 1.. run scoreboard players set $NumPlayers platformVar 32
 execute unless score $Radius platformVar matches 1.. run scoreboard players set $Radius platformVar 31
 scoreboard objectives add win dummy
 scoreboard objectives add matchID dummy
