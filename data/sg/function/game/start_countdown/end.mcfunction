@@ -22,4 +22,4 @@ scoreboard players set $CountdownTimerActivated timers 0
 function sg:game/border/state/grace with storage sg:options Options
 
 #schedule chest restock
-function sg:game/chests/restock/schedule with storage sg:options Options
+execute unless data storage sg:options {Options:{chest_restock_mode:"none"}} run function sg:game/chests/restock/schedule with storage sg:options Options

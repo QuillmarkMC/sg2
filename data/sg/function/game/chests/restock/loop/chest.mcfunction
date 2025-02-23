@@ -16,4 +16,4 @@ execute if score $Restocking chestRestock matches 1 run function sg:game/chests/
 scoreboard players remove $ChestIndex chestRestock 1
 execute store result storage sg:restock ChestIndex int 1 run scoreboard players get $ChestIndex chestRestock
 execute unless score $ChestIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/chest with storage sg:restock
-execute if score $ChestIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/recursive/chunk
+execute if score $ChestIndex chestRestock matches ..-1 unless score $ChunkIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/recursive/chunk

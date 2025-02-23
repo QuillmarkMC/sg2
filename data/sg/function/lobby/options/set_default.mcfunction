@@ -4,6 +4,7 @@ data merge storage sg:options {Defaults:\
     border_delay:300,\
     border_shrink_time:600,\
     chest_restock_time:600,\
+    chest_restock_mode:"cornucopia",\
     grace_period:30,\
     max_team_size:2\
     }\

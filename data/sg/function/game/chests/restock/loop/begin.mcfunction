@@ -1,7 +1,7 @@
 execute if score $Debug var matches 2.. run say sg:game/chests/restock/loop/begin
 
-#TODO: debug message to admins about starting chest place
-scoreboard players set $RestockInProgress chestRestock 1
+tellraw @a[tag=Admin] [{"text":"[!] ","color":"gold","bold": true},{"translate":"text.admin.chest.restock.begin","bold": false,"color": "white"}]
+scoreboard players set $InProgress chestRestock 1
 scoreboard players set $Timer chestRestock 0
 
 #get number of chunks, use it as index to loop through chunk array and get all chests per chunk
