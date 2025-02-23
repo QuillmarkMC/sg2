@@ -2,9 +2,9 @@ tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.gam
 
 title @a times 5 120 20
 #alive players
-title @a[gamemode=!spectator,tag=SGPlaying] subtitle [{"translate": "text.game.death.subtitle","color": "white"},{"text":"?","color": "red"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
+title @a[gamemode=!spectator,tag=SGPlaying] subtitle [{"translate": "text.game.title.subtitle","color": "white"},{"text":"?","color": "red"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
 #dead players
-execute as @a[gamemode=spectator,tag=SGPlaying] run title @s subtitle [{"translate": "text.game.death.subtitle","color": "white"},{"score":{"name":"@s","objective":"playerPosition"},"color": "green"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
+execute as @a[gamemode=spectator,tag=SGPlaying] run title @s subtitle [{"translate": "text.game.title.subtitle","color": "white"},{"score":{"name":"@s","objective":"playerPosition"},"color": "green"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
 title @a[tag=!SGPlaying] subtitle ""
 title @a title {"color":"red","translate":"text.game.title.lose"}
 

@@ -6,10 +6,10 @@ tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.gam
 
 title @a times 5 120 20
 #winners
-title @a[tag=SGWinner] subtitle [{"translate": "text.game.death.subtitle","color": "white"},{"text":"1","color": "gold"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
+title @a[tag=SGWinner] subtitle [{"translate": "text.game.title.subtitle","color": "white"},{"text":"1","color": "gold"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
 title @a[tag=SGWinner] title {"color":"#F3DD4F","translate":"text.game.title.win","bold": true}
 #not winners
-execute as @a[tag=!SGWinner,tag=SGPlaying] run title @s subtitle [{"translate": "text.game.death.subtitle","color": "white"},{"score":{"name":"@s","objective":"playerPosition"},"color": "green"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
+execute as @a[tag=!SGWinner,tag=SGPlaying] run title @s subtitle [{"translate": "text.game.title.subtitle","color": "white"},{"score":{"name":"@s","objective":"playerPosition"},"color": "green"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
 title @a[tag=!SGPlaying] subtitle ""
 title @a[tag=!SGWinner] title {"color":"red","translate":"text.game.title.lose"}
 
