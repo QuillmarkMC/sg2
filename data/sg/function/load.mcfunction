@@ -51,8 +51,13 @@ function sg:lobby/options/set_default
 #Teams
 team add spectator
 team modify spectator color dark_gray
+team modify spectator collisionRule never
 team add ready
 team modify ready color dark_green
+team modify ready collisionRule never
+team add lobby
+team modify lobby color white
+team modify lobby collisionRule never
 
 #Forceload
 function sg:general/forceload/lobby

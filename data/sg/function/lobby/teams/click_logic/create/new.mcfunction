@@ -5,6 +5,7 @@ execute if score $Debug var matches 2.. run say sg:lobby/teams/click_logic/creat
 $team add $(ID)
 $team modify $(ID) color $(Color)
 $team modify $(ID) friendlyFire false
+$team modify $(ID) collisionRule never
 #team modify $(ID) prefix ""
 
 $data modify storage sg:teams Teams append value {\
