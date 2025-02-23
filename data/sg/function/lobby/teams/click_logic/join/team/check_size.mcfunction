@@ -3,6 +3,6 @@
 
 $execute store result score #TempTeam teamID if entity @a[team=$(ID)]
 #no join
-execute if score #TempTeam teamID >= $MaxTeamSize options
+execute if score #TempTeam teamID >= $MaxTeamSize options run tellraw @s [{"text":"[!] ","color":"dark_red","bold": true},{"translate":"text.lobby.teams.full","color":"white","bold": false}]
 #yes join
 execute unless score #TempTeam teamID >= $MaxTeamSize options run function sg:lobby/teams/click_logic/join/team/allow with storage sg:teams join_data
