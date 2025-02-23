@@ -14,4 +14,6 @@ schedule clear sg:lobby/load
 schedule clear sg:game/end_game/end/transition
 schedule clear sg:game/start_countdown/update
 
+bossbar set sg:border visible false
+
 tag @a add SGResetPlayer

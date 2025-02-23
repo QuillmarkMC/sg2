@@ -3,7 +3,7 @@ kill @e[type=marker,tag=PlayerSpawnPlatform]
 
 #input number of players, scale by 1000, then do math for float precision before scaling back by 0.001
 scoreboard players set $RotationAngle platformVar 360000
-scoreboard players operation #NumPlayers_math platformVar = $NumPlayers platformVar
+execute store result score #NumPlayers_math platformVar if entity @a[tag=SGPlaying]
 scoreboard players operation #NumPlayers_math platformVar *= #1000 math
 execute store result storage sg:platforms Platform.Angle float 0.001 run scoreboard players operation $RotationAngle platformVar /= $NumPlayers platformVar
 

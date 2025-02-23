@@ -4,6 +4,8 @@ function sg:general/change_state
 #set gamestate
 scoreboard players operation $State gameState = $Lobby gameState
 
+function sg:game/border/set_lobby
+
 scoreboard players set $EntityLoad lobbyVar 0
 scoreboard players set $EntityLoadTimer lobbyVar 0
 scoreboard players set $Countdown timers -1
