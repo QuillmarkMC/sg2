@@ -2,6 +2,7 @@ execute if score $Debug var matches 3.. run say sg:game/chests/restock/loop/acti
 
 #called with storage sg:restock
 #only runs on first chest stock
+#execute store result bossbar sg:loot value run scoreboard players add $ProgressBar chestRestock 1
 
 $execute store success score #SpawnChest chestRestock if predicate {condition:"random_chance",chance:$(SpawnChance)}
 $data merge block $(xyz) {Items:[],LootTable:""}

@@ -5,5 +5,6 @@ execute if score $Debug var matches 2.. run say sg:game/chests/restock/loop/fini
 execute if score $Restocking chestRestock matches 0 run function sg:game/start_countdown/begin
 execute if score $Restocking chestRestock matches 1 if data storage sg:options {Options:{chest_restock_mode:"all"}} run tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.chest.restock.finish.all","bold": false,"color": "white"}]
 execute if score $Restocking chestRestock matches 1 if data storage sg:options {Options:{chest_restock_mode:"cornucopia"}} run tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.chest.restock.finish.cornucopia","bold": false,"color": "white"}]
-#execute if score $Restocking chestRestock matches 1 as @a at @s run playsound minecraft:block.chest.open record @s ~ ~ ~ 0.8 0.8
+execute if score $Restocking chestRestock matches 1 as @a at @s run playsound minecraft:block.chest.open ambient @s ~ ~ ~ 0.8 0.8
 scoreboard players set $InProgress chestRestock 0
+bossbar set sg:loot visible false

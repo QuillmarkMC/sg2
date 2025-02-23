@@ -6,6 +6,7 @@ scoreboard players set $Timer chestRestock 0
 
 #get number of chunks, use it as index to loop through chunk array and get all chests per chunk
 execute store result score $ChunkIndex chestRestock run data get storage sg:chests Chunks
+#execute if score $Restocking chestRestock matches 0 run function sg:game/chests/restock/bossbar/show
 scoreboard players remove $ChunkIndex chestRestock 1
 
 execute store result storage sg:restock ChunkIndex int 1 run scoreboard players get $ChunkIndex chestRestock

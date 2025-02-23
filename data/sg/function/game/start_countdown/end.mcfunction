@@ -6,7 +6,7 @@ function sg:game/grace/count
 
 #VFX
 summon lightning_bolt 0 71 0
-execute as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
+execute as @a at @s run playsound block.anvil.place ambient @s ~ ~ ~ 0.75
 
 #Unleash the beasts
 execute as @a[tag=SGPlaying,gamemode=!spectator] at @s run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace barrier

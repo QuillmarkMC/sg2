@@ -15,5 +15,6 @@ schedule clear sg:game/end_game/end/transition
 schedule clear sg:game/start_countdown/update
 
 bossbar set sg:border visible false
+bossbar set sg:loot visible false
 
 tag @a add SGResetPlayer

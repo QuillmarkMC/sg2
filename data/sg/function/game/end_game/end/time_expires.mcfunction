@@ -8,7 +8,7 @@ execute as @a[gamemode=spectator,tag=SGPlaying] run title @s subtitle [{"transla
 title @a[tag=!SGPlaying] subtitle ""
 title @a title {"color":"red","translate":"text.game.title.lose"}
 
-execute as @a at @s run playsound ui.toast.challenge_complete record @s ~ ~ ~ 1 1.5
+execute as @a at @s run playsound ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.5
 
 effect give @a[gamemode=adventure] resistance infinite 10 true
 

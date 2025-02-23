@@ -15,7 +15,7 @@ title @a[tag=!SGWinner] title {"color":"red","translate":"text.game.title.lose"}
 
 scoreboard players operation $FireworkFanfare win = $TotalFireworks var
 function sg:game/end_game/end/fireworks/schedule
-execute as @a at @s run playsound ui.toast.challenge_complete record @s ~ ~ ~ 1 1.5
+execute as @a at @s run playsound ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.5
 
 effect give @a[tag=SGWinner] resistance infinite 10 true
 

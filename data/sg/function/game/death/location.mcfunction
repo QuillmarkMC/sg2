@@ -14,4 +14,4 @@ kill @e[tag=SGTempDeathMarker,type=marker,limit=1]
 scoreboard players reset @s deathDelayTimer
 
 #playsound
-execute at @s run playsound entity.wither.death record @s ~ ~ ~ 1 1
+execute at @s run playsound entity.wither.death ambient @s ~ ~ ~ 1 1
