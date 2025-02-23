@@ -1,4 +1,4 @@
-execute if score $Debug var matches 3.. run say sg:game/spawning/platforms/begin
+execute if score $Debug var matches 3.. run say sg:game/spawning/spectating/join
 
 # @s = player being put into spectator, either at the beginning of a match or after death
 gamemode spectator
