@@ -22,3 +22,4 @@ gamerule playersSleepingPercentage 101
 execute unless score $State gameState = $Dev gameState run gamerule spectatorsGenerateChunks false
 execute unless score $State gameState = $Dev gameState run gamerule sendCommandFeedback false
 gamerule spawnChunkRadius 0
+gamerule projectilesCanBreakBlocks false
