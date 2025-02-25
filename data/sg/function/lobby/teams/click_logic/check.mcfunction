@@ -10,4 +10,4 @@ execute if items entity @s player.cursor phantom_membrane[minecraft:custom_data~
 execute if items entity @s player.cursor phantom_membrane[minecraft:custom_data~{Spectate:true}] run function sg:lobby/teams/click_logic/join/spectate
 
 item replace entity @s player.cursor with air
-function sg:lobby/teams/inventory/update
+#function sg:lobby/teams/inventory/update
