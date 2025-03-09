@@ -9,6 +9,8 @@ function sg:game/border/set_lobby
 scoreboard players set $EntityLoad lobbyVar 0
 scoreboard players set $EntityLoadTimer lobbyVar 0
 scoreboard players set $Countdown timers -1
+scoreboard players set $ExpectedTeamLeads lobbyVar 0
+scoreboard players set $CurrentTeamLeads lobbyVar 0
 
 execute in the_end run gamerule fallDamage false
 execute in the_end run gamerule showDeathMessages false

@@ -19,6 +19,10 @@ function sg:lobby/teams/click_logic/join/team/get_data with storage sg:teams joi
 #team lead tag must come after join team function
 tag @s add SGTeamLead
 
+#update total leader count
+scoreboard players add $CurrentTeamLeads lobbyVar 1
+scoreboard players operation $ExpectedTeamLeads lobbyVar = $CurrentTeamLeads lobbyVar
+
 scoreboard players set @s teamGUI.State 1
 #dirty hack to put player on the last gui page
 execute store result score @s teamGUI.Page run data get storage sg:teams Teams

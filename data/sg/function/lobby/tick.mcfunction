@@ -7,4 +7,7 @@ execute unless score $EntityLoad lobbyVar matches 1 unless score $EntityLoadTime
 #tick team selection chest for nearby players
 execute as @a[predicate=sg:lobby/team_select] run function sg:lobby/teams/tick
 
+#check if a team lead disconnected, disband their team if true
+function sg:lobby/teams/leaders/tick
+
 kill @e[type=item]
