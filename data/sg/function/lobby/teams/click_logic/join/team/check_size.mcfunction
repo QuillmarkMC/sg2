@@ -1,4 +1,4 @@
-#prevent player from joining a full team
+#prevent player from joining a full team or a team they are already on
 #called with sg:teams join_data
 
 $execute store result score #TempTeam teamID if entity @a[team=$(ID)]

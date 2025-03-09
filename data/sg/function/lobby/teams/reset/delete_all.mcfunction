@@ -6,3 +6,4 @@ execute if score $Next teamID matches 1.. run function sg:lobby/teams/reset/loop
 
 scoreboard players reset * teamID
 scoreboard players set $Next teamID 0
+tag @a remove SGTeamLead
