@@ -5,7 +5,7 @@ execute if score $Debug var matches 2.. run say sg:lobby/teams/leave/individual
 scoreboard players reset #DisbandTeam lobbyVar
 scoreboard players reset #TempTeamSize lobbyVar
 
-scoreboard players operation $TeamLeaveID lobbyVar = @s lobbyVar
+scoreboard players operation $TeamLeaveID lobbyVar = @s teamID
 execute as @a if score @s lobbyVar = $TeamLeaveID lobbyVar run scoreboard players add #TempTeamSize lobbyVar 1
 execute if score #TempTeamSize lobbyVar matches ..1 run scoreboard players set #DisbandTeam lobbyVar 1
 
