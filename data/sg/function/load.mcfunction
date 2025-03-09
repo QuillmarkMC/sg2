@@ -57,6 +57,9 @@ team modify ready collisionRule never
 team add lobby
 team modify lobby color white
 team modify lobby collisionRule never
+team add random
+team modify random color light_purple
+team modify random collisionRule never
 
 #Forceload
 function sg:general/forceload/lobby

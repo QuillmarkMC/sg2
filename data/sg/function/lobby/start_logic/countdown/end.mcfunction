@@ -1,7 +1,7 @@
 title @a times 20 40 20
 title @a title "\uE019"
 
-#execute as @a[team=Random] run function sg:lobby/team_select/random/check
+execute as @a[team=random] run function sg:lobby/teams/random/find_team
 team join spectator @a[team=lobby]
 tag @a[team=!spectator] add SGPlaying
 team leave @a[team=ready]

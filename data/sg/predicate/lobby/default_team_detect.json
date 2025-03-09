@@ -21,6 +21,13 @@
             "predicate": {
                 "team": "ready"
             }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "team": "random"
+            }
         }
     ]
 }

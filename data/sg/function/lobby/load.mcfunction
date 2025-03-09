@@ -20,4 +20,5 @@ execute in the_end run difficulty peaceful
 
 #function sg:lobby/options/set_default
 function sg:lobby/teams/reset/delete_all
+function sg:lobby/teams/random/init
 execute in the_end unless block -9 68 6 chest run setblock -9 68 6 chest[facing=west]

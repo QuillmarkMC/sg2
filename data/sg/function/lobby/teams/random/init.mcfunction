@@ -1,0 +1,19 @@
+data merge storage sg:teams {random_data:{Colors:[\
+    "red",\
+    "yellow",\
+    "green",\
+    "aqua",\
+    "blue",\
+    "light_purple",\
+    "white",\
+    "dark_gray",\
+    "dark_red",\
+    "gold",\
+    "dark_green",\
+    "dark_aqua",\
+    "dark_blue",\
+    "dark_purple",\
+    "gray",\
+    "black"\
+    ]}\
+}
