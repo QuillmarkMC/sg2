@@ -1,3 +1,4 @@
+#called with sg:teams
 $team remove $(delete_index)
 
 execute store result storage sg:teams delete_index int 1 run scoreboard players remove $Next teamID 1

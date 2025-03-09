@@ -10,7 +10,8 @@ tag @s remove SGPlaying
 tag @s remove SGNotSpawned
 tag @s remove SGWinner
 tag @s remove SGOutOfBounds
-#reset scoreboards
+tag @s remove SGTeamLead
+scoreboard players reset @s teamID
 
 execute if score $State gameState = $Lobby gameState in the_end run function sg:general/player/reset/lobby
 execute if score $State gameState = $Game gameState run function sg:general/player/reset/game

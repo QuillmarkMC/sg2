@@ -16,6 +16,8 @@ $data modify storage sg:teams Teams append value {\
 
 data modify storage sg:teams join_data set from storage sg:teams new_data
 function sg:lobby/teams/click_logic/join/team/get_data with storage sg:teams join_data
+#team lead tag must come after join team function
+tag @s add SGTeamLead
 
 scoreboard players set @s teamGUI.State 1
 #dirty hack to put player on the last gui page
