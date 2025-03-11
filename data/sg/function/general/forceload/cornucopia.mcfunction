@@ -1,1 +1,1 @@
-execute in overworld run forceload add -40 40 40 -40
+forceload add -40 40 40 -40

@@ -1,1 +1,2 @@
-execute in the_end run forceload add -11 4 36 -6
+#TODO: is this really necessary
+execute run forceload add 35529 35485 35529 35509

@@ -5,19 +5,19 @@
       "location": {
         "position": {
           "x": {
-            "min": -9.0,
-            "max": 6.0
+            "min": 35522.0,
+            "max": 35536.0
           },
           "y": {
-            "min": 61.0,
-            "max": 67.0
+            "min": 59.0,
+            "max": 65.0
           },
           "z": {
-            "min": -8.0,
-            "max": 9.0
+            "min": 35488.0,
+            "max": 35505.0
           }
         },
-        "dimension": "minecraft:the_end"
+        "dimension": "minecraft:overworld"
       }
     }
   }

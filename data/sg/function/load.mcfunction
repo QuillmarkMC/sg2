@@ -69,5 +69,4 @@ function sg:general/forceload/cornucopia
 function sg:game/border/init_bossbar
 
 #Gamerules
-execute in overworld run function sg:general/gamerules
-execute in the_end run function sg:general/gamerules
+function sg:general/gamerules

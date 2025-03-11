@@ -1,1 +1,1 @@
-#execute in the_end run kill @e[type=marker,tag=SGLobbySpawnPosition]
+#kill @e[type=marker,tag=SGLobbySpawnPosition]

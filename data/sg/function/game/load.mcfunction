@@ -15,7 +15,7 @@ execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectating/join
 function sg:game/effects/grace
 gamemode adventure @a[tag=SGPlaying]
 clear @a
-execute as @a in overworld run spawnpoint @s 0 127 1
+execute as @a run spawnpoint @s 0 127 1
 
 #map events
 
