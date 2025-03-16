@@ -3,3 +3,4 @@ execute store result storage sg:lobby_spawns index int 1 run scoreboard players 
 function sg:lobby/death/respawn/arena/2 with storage sg:lobby_spawns
 
 scoreboard players operation @s inventoryState = $Lobby.Default inventoryState
+tag @s remove SGArenaFighter
