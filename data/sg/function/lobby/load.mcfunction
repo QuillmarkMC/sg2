@@ -22,3 +22,5 @@ difficulty peaceful
 function sg:lobby/teams/reset/delete_all
 function sg:lobby/teams/random/init
 execute unless block 35522 67 35502 chest run setblock 35522 67 35502 chest[facing=west]
+
+function sg:lobby/arena/init

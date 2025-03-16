@@ -10,4 +10,13 @@ execute as @a[predicate=sg:lobby/team_select] run function sg:lobby/teams/tick
 #check if a team lead disconnected, disband their team if true
 function sg:lobby/teams/leaders/tick
 
+#check if a player left the arena without dying
+execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena/deserter] unless score @s death matches 1.. run function sg:lobby/arena/deserter
+
+#check if player entered arena
+execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena/enter,gamemode=!spectator] run function sg:lobby/arena/enter
+
+#respawn dead players (place anytime after arena entrance check)
+execute as @a[scores={death=1..}] run function sg:lobby/death/on_death
+
 kill @e[type=item]

@@ -11,6 +11,7 @@ tag @s remove SGNotSpawned
 tag @s remove SGWinner
 tag @s remove SGOutOfBounds
 tag @s remove SGTeamLead
+tag @s remove SGArenaFighter
 scoreboard players reset @s teamID
 
 execute if score $State gameState = $Lobby gameState run function sg:general/player/reset/lobby

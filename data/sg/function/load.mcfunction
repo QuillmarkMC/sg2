@@ -24,6 +24,12 @@ scoreboard objectives add dropPhantom dropped:phantom_membrane
 scoreboard objectives add options dummy
 scoreboard objectives add teamGUI.State dummy
 scoreboard objectives add teamGUI.Page dummy
+scoreboard objectives add inventoryState dummy
+scoreboard players set $Lobby.Default inventoryState 0
+scoreboard players set $Lobby.Arena inventoryState 1
+scoreboard objectives add respawnState dummy
+scoreboard players set $Lobby.Default respawnState 0
+scoreboard players set $Lobby.Arena respawnState 1
 
 #game
 scoreboard objectives add platformVar dummy
