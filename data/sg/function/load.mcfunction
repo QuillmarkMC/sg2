@@ -30,6 +30,7 @@ scoreboard players set $Lobby.Arena inventoryState 1
 scoreboard objectives add respawnState dummy
 scoreboard players set $Lobby.Default respawnState 0
 scoreboard players set $Lobby.Arena respawnState 1
+scoreboard objectives add parkour dummy
 
 #game
 scoreboard objectives add platformVar dummy

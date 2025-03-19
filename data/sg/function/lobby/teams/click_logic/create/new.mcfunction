@@ -6,7 +6,7 @@ $team add $(ID)
 $team modify $(ID) color $(Color)
 $team modify $(ID) friendlyFire false
 $team modify $(ID) collisionRule never
-$team modify $(ID) prefix "\u$(Prefix)"
+$team modify $(ID) prefix {"text":"\u$(Prefix)","color":"white","shadow_color":0}
 
 $data modify storage sg:teams Teams append value {\
     id:$(ID),\
