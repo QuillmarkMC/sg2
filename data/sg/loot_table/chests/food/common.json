@@ -2,68 +2,18 @@
     "type": "minecraft:chest",
     "pools": [
       {
-        "rolls": {
-          "min": 3,
-          "max": 5
-        },
+        "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:loot_table",
+            "type": "minecraft:item",
             "weight": 100,
-            "value": "sg:memes/horn"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 400,
-            "name": "minecraft:cobblestone",
+            "name": "minecraft:cookie",
             "functions": [
               {
                 "function": "minecraft:set_count",
                 "count": {
                   "min": 1,
-                  "max": 3
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 800,
-            "name": "minecraft:gold_ingot",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 6
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 600,
-            "name": "minecraft:oak_planks",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 4
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 300,
-            "name": "minecraft:arrow",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 7
+                  "max": 2
                 }
               }
             ]
@@ -71,12 +21,44 @@
           {
             "type": "minecraft:item",
             "weight": 100,
-            "name": "minecraft:spyglass"
+            "name": "minecraft:glow_berries",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
           },
           {
-            "type": "loot_table",
-            "weight": 300,
-            "value": "sg:chests/food/cornucopia"
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "minecraft:cod",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "minecraft:salmon",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
           }
         ]
       }

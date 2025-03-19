@@ -10,7 +10,7 @@
           {
             "type": "minecraft:item",
             "name": "minecraft:iron_ingot",
-            "weight": 15,
+            "weight": 200,
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -23,7 +23,7 @@
           },{
             "type": "minecraft:item",
             "name": "minecraft:diamond",
-            "weight": 20,
+            "weight": 150,
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -36,6 +36,7 @@
           },
           {
             "type": "minecraft:item",
+            "weight": 100,
             "name": "minecraft:tipped_arrow",
             "functions": [
               {
@@ -49,11 +50,11 @@
                   "max": 12
                 }
               }
-            ],
-            "weight": 3
+            ]
           },
           {
             "type": "minecraft:item",
+            "weight": 100,
             "name": "minecraft:tipped_arrow",
             "functions": [
               {
@@ -67,176 +68,22 @@
                   "max": 12
                 }
               }
-            ],
-            "weight": 3
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:protection": 1
-                }
-              }
             ]
           },
           {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:projectile_protection": 1
-                }
-              }
-            ]
+            "type": "loot_table",
+            "weight": 100,
+            "value": "sg:chests/food/epic"
           },
           {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:sharpness": 1
-                }
-              }
-            ]
+            "type": "loot_table",
+            "weight": 100,
+            "value": "sg:chests/enchants/epic"
           },
           {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:flame": 1
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:power": 1
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:fire_aspect": 1
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:enchanted_book",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:infinity": 1
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:splash_potion",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_potion",
-                "id": "minecraft:harming"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:splash_potion",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_potion",
-                "id": "minecraft:poison"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:potion",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_potion",
-                "id": "minecraft:swiftness"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:potion",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_potion",
-                "id": "minecraft:strength"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:potion",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_potion",
-                "id": "minecraft:fire_resistance"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:splash_potion",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_potion",
-                "id": "minecraft:regeneration"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:splash_potion",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_potion",
-                "id": "minecraft:healing"
-              }
-            ]
+            "type": "loot_table",
+            "weight": 100,
+            "value": "sg:chests/potions/epic"
           }
         ]
       }

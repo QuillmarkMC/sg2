@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 300,
             "name": "minecraft:leather",
             "functions": [
               {
@@ -23,7 +23,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 300,
             "name": "minecraft:cobblestone",
             "functions": [
               {
@@ -37,7 +37,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 500,
             "name": "minecraft:oak_planks",
             "functions": [
               {
@@ -51,7 +51,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 300,
             "name": "minecraft:stick",
             "functions": [
               {
@@ -65,7 +65,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 300,
             "name": "minecraft:arrow",
             "functions": [
               {
@@ -79,7 +79,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 100,
             "name": "minecraft:string",
             "functions": [
               {
@@ -92,88 +92,9 @@
             ]
           },
           {
-            "type": "minecraft:item",
-            "weight": 3,
-            "name": "minecraft:melon_slice",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 4
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 3,
-            "name": "minecraft:bread",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 3
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:apple",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 3,
-            "name": "minecraft:carrot",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 4
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 4,
-            "name": "minecraft:rotten_flesh",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 6
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 4,
-            "name": "minecraft:experience_bottle",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 3
-                }
-              }
-            ]
+            "type": "loot_table",
+            "weight": 200,
+            "value": "sg:chests/food/common"
           }
         ]
       }
