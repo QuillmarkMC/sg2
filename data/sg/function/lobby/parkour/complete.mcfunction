@@ -1,3 +1,5 @@
+execute if score $Debug var matches 1.. run say sg:lobby/parkour/complete
+
 execute at @s run playsound ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1
 #tellraw @a
 scoreboard players reset @s parkourCheckpoint

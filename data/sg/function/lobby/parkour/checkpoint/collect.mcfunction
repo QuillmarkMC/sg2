@@ -1,3 +1,5 @@
+execute if score $Debug var matches 1.. run say sg:lobby/parkour/checkpoint/collect
+
 scoreboard players add @s parkourCheckpoint 1
 
 execute if score @s parkourCheckpoint matches ..1 run function sg:lobby/parkour/start

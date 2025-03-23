@@ -1,3 +1,5 @@
+execute if score $Debug var matches 4.. run say sg:lobby/parkour/tick
+
 #called every tick as @a from lobby tick function
 execute store result storage sg:parkour Index int 1 run scoreboard players get @s parkourCheckpoint
 function sg:lobby/parkour/checkpoint/get_index with storage sg:parkour
