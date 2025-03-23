@@ -79,4 +79,4 @@ function sg:general/forceload/cornucopia
 function sg:game/border/init_bossbar
 
 #Gamerules
-function sg:general/gamerules
+execute unless score $State gameState = $Dev gameState run function sg:general/gamerules
