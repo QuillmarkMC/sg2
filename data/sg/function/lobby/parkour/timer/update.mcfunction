@@ -3,6 +3,8 @@ scoreboard players add @s parkourTimer 1
 scoreboard players operation #Num1 parkourTimer = @s parkourTimer
 scoreboard players operation #Num2 parkourTimer = @s parkourTimer
 scoreboard players operation #Num3 parkourTimer = @s parkourTimer
+scoreboard players operation #Num1 parkourTimer /= #20 math
+scoreboard players operation #Num2 parkourTimer /= #20 math
 scoreboard players operation #Num1 parkourTimer /= #60 math
 scoreboard players operation #Num2 parkourTimer %= #60 math
 scoreboard players operation #Num3 parkourTimer %= #10 math

@@ -19,6 +19,7 @@ gamerule keepInventory true
 difficulty peaceful
 
 #function sg:lobby/options/set_default
+#TODO: run all storage data functions
 function sg:lobby/teams/reset/delete_all
 function sg:lobby/teams/random/init
 execute unless block 35522 67 35502 chest run setblock 35522 67 35502 chest[facing=west]
