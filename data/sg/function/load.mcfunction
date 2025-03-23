@@ -9,6 +9,7 @@ execute unless score $Debug var matches 1.. run scoreboard players set $Debug va
 
 scoreboard objectives add math dummy
 scoreboard players set #2 math 2
+scoreboard players set #10 math 10
 scoreboard players set #14 math 14
 scoreboard players set #20 math 20
 scoreboard players set #60 math 60
@@ -30,7 +31,9 @@ scoreboard players set $Lobby.Arena inventoryState 1
 scoreboard objectives add respawnState dummy
 scoreboard players set $Lobby.Default respawnState 0
 scoreboard players set $Lobby.Arena respawnState 1
-scoreboard objectives add parkour dummy
+scoreboard players set $Lobby.Parkour respawnState 2
+scoreboard objectives add parkourCheckpoint dummy
+scoreboard objectives add parkourTimer dummy
 
 #game
 scoreboard objectives add platformVar dummy
