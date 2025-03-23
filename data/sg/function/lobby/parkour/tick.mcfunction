@@ -4,5 +4,5 @@ function sg:lobby/parkour/checkpoint/get_index with storage sg:parkour
 
 execute if score @s parkourCheckpoint matches 1.. run function sg:lobby/parkour/timer/update
 
-execute if predicate sg:lobby/parkour/early_leave run function sg:lobby/parkour/end_early
+execute if score @s parkourCheckpoint matches 1.. if predicate sg:lobby/parkour/early_leave run function sg:lobby/parkour/end_early
 execute if predicate sg:lobby/parkour/respawn run function sg:lobby/parkour/respawn
