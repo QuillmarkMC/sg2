@@ -35,7 +35,6 @@ scoreboard players set $Lobby.Parkour respawnState 2
 scoreboard objectives add parkourCheckpoint dummy
 scoreboard objectives add parkourTimer dummy
 scoreboard objectives add lobbyMusic dummy
-scoreboard players set $Length.DesolateDesert lobbyMusic 1468
 
 #game
 scoreboard objectives add platformVar dummy
@@ -57,9 +56,7 @@ scoreboard players set $TotalFireworks var 3
 
 execute unless score $SetConst var matches 1.. run function sg:general/set_const
 
-function sg:lobby/options/set_default
-
-#Teams
+#Default Teams
 team add spectator
 team modify spectator color dark_gray
 team modify spectator collisionRule never
@@ -77,8 +74,7 @@ team modify random collisionRule never
 function sg:general/forceload/lobby
 function sg:general/forceload/cornucopia
 
-#bossbar
-function sg:game/border/init_bossbar
-
 #Gamerules
 execute unless score $State gameState = $Dev gameState run function sg:general/gamerules
+
+execute if score $State gameState = $Lobby gameState run function sg:lobby/load

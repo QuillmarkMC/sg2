@@ -22,6 +22,7 @@ execute as @a run spawnpoint @s 0 127 1
 #timer model
 
 #bossbar
+function sg:game/border/init_bossbar
 function sg:game/border/set_game with storage sg:options Options
 
 #set number of players

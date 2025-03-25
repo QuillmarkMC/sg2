@@ -18,10 +18,11 @@ gamerule naturalRegeneration true
 gamerule keepInventory true
 difficulty peaceful
 
-#function sg:lobby/options/set_default
-#TODO: run all storage data functions
+function sg:lobby/options/set_default
+function sg:lobby/music/init
+function sg:lobby/arena/init
+function sg:lobby/death/respawn/init
+
 function sg:lobby/teams/reset/delete_all
 function sg:lobby/teams/random/init
 execute unless block 35522 67 35502 chest run setblock 35522 67 35502 chest[facing=west]
-
-function sg:lobby/arena/init

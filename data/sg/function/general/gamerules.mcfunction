@@ -19,7 +19,7 @@ gamerule freezeDamage true
 gamerule maxEntityCramming 999
 gamerule mobGriefing false
 gamerule playersSleepingPercentage 101
-execute unless score $State gameState = $Dev gameState run gamerule spectatorsGenerateChunks false
-execute unless score $State gameState = $Dev gameState run gamerule sendCommandFeedback false
+gamerule spectatorsGenerateChunks false
+gamerule sendCommandFeedback false
 gamerule spawnChunkRadius 0
 gamerule projectilesCanBreakBlocks false
