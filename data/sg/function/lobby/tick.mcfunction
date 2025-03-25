@@ -22,4 +22,7 @@ execute as @a[scores={death=1..}] run function sg:lobby/death/on_death
 #tick parkour logic per player
 execute as @a run function sg:lobby/parkour/tick
 
+#timer for music looping
+execute as @a run function sg:lobby/music/tick
+
 kill @e[type=item]

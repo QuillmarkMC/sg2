@@ -3,6 +3,7 @@
 tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin","bold": false,"with": [{"nbt": "Options.grace_period","storage": "sg:options"}],"color": "white"}]
 execute store result score $Countdown timers run data get storage sg:options Options.grace_period
 function sg:game/grace/count
+execute as @a at @s run playsound sg:music.grace ambient @s ~ ~ ~ 1 1
 
 #VFX
 summon lightning_bolt 0 71 0

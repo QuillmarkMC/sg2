@@ -34,6 +34,8 @@ scoreboard players set $Lobby.Arena respawnState 1
 scoreboard players set $Lobby.Parkour respawnState 2
 scoreboard objectives add parkourCheckpoint dummy
 scoreboard objectives add parkourTimer dummy
+scoreboard objectives add lobbyMusic dummy
+scoreboard players set $Length.DesolateDesert lobbyMusic 1468
 
 #game
 scoreboard objectives add platformVar dummy
