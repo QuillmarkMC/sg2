@@ -16,7 +16,7 @@ gamerule fallDamage false
 gamerule showDeathMessages false
 gamerule naturalRegeneration true
 gamerule keepInventory true
-difficulty peaceful
+difficulty easy
 
 function sg:lobby/options/set_default
 function sg:lobby/music/init

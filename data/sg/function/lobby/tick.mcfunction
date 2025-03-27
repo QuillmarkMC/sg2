@@ -25,4 +25,7 @@ execute as @a run function sg:lobby/parkour/tick
 #timer for music looping
 execute as @a run function sg:lobby/music/tick
 
+#MC-251555 lol
+execute as @a unless items entity @s weapon.offhand air run advancement grant @s only sg:inv_changed
+
 kill @e[type=item]

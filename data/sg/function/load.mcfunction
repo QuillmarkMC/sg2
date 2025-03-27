@@ -77,4 +77,7 @@ function sg:general/forceload/cornucopia
 #Gamerules
 execute unless score $State gameState = $Dev gameState run function sg:general/gamerules
 
-execute if score $State gameState = $Lobby gameState run function sg:lobby/load
+#Initialize map on first load
+execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/load
+execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/options/reset
+scoreboard players set $Loaded var 1

@@ -8,4 +8,4 @@ execute store result storage sg:teams random_data.Index int 1 run scoreboard pla
 
 function sg:lobby/teams/random/loop/get_id with storage sg:teams random_data
 #if entity @s is still on team random, then no available teams were found, so new one must be created
-function sg:lobby/teams/random/new/create_team
+execute if entity @s[team=random] run function sg:lobby/teams/random/new/create_team
