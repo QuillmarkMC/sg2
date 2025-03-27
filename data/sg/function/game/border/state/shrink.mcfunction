@@ -6,5 +6,5 @@ execute store result bossbar sg:border max run scoreboard players get $Timer bor
 bossbar set sg:border visible true
 scoreboard players operation $State border = $Shrink border
 function sg:game/border/update
-execute as @a at @s run playsound sg:music.stinger record @s ~ ~ ~ 1 1
+execute as @a at @s run playsound sg:music.stinger record @s ~ ~ ~ 1.2 1
 tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.border.shrink","color": "white","bold": false}]
