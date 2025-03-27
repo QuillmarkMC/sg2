@@ -12,6 +12,7 @@ function sg:game/chests/restock/start
 function sg:game/spawning/players/check_mode
 function sg:game/spawning/spectating/init
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectating/join
+effect clear @a
 function sg:game/effects/grace
 gamemode adventure @a[tag=SGPlaying]
 clear @a
