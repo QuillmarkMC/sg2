@@ -6,4 +6,4 @@ execute if score $Restocking chestRestock matches 1 if data storage sg:options {
 execute if score $CancelThisChest chestRestock matches 1 run return fail
 
 $data merge block $(xyz) {Items:[],LootTable:""}
-$data modify block $(xyz) LootTable set value "sg:chests/normal/$(Quality)"
+$data modify block $(xyz) LootTable set value "sg:chests/base/$(Quality)"
