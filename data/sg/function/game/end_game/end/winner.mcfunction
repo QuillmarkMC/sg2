@@ -21,6 +21,7 @@ function sg:game/end_game/end/fireworks/schedule
 execute as @a at @s run playsound ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.5
 
 effect give @a[tag=SGWinner] resistance infinite 10 true
+function sg:game/deathmatch/events/reset
 
 scoreboard players set $GameOver win 1
 schedule function sg:game/end_game/end/transition 160t

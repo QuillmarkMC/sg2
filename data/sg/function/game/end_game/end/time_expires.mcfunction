@@ -10,7 +10,8 @@ title @a title {"color":"red","translate":"text.game.title.lose"}
 
 execute as @a at @s run playsound ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.5
 
-effect give @a[gamemode=adventure] resistance infinite 10 true
+effect give @a[gamemode=!spectator] resistance infinite 10 true
+function sg:game/deathmatch/events/reset
 
 scoreboard players set $GameOver win 1
 scoreboard players set $Timer border -1
