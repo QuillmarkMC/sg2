@@ -12,5 +12,6 @@ execute as @a at @s run playsound ui.toast.challenge_complete ambient @s ~ ~ ~ 1
 
 effect give @a[gamemode=adventure] resistance infinite 10 true
 
+scoreboard players set $GameOver win 1
 scoreboard players set $Timer border -1
 schedule function sg:game/end_game/end/transition 160t

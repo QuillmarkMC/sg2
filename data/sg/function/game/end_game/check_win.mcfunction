@@ -1,4 +1,7 @@
 #this function is called every time a player dies and everytime an alive player disconnects
+#dont check win condition if game is already over
+execute if score $GameOver win matches 1.. run return fail
+
 #get remaining alive player count
 execute store result score $CurrentPlayers win if entity @a[tag=SGPlaying,gamemode=!spectator]
 

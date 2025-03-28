@@ -1,4 +1,7 @@
-tag @a[tag=SGPlaying,gamemode=!spectator] add SGWinner
+#identify all players on the winning team
+scoreboard players operation $Temp teamID = @a[tag=SGPlaying,gamemode=!spectator,limit=1] teamID
+execute as @a if score @s teamID = $Temp teamID run tag @s add SGWinner
+
 #tag winners to get VIP lobby access, persists through resets
 tag @a[tag=SGWinner] add SGVictoryRoyale
 
@@ -19,6 +22,7 @@ execute as @a at @s run playsound ui.toast.challenge_complete ambient @s ~ ~ ~ 1
 
 effect give @a[tag=SGWinner] resistance infinite 10 true
 
+scoreboard players set $GameOver win 1
 schedule function sg:game/end_game/end/transition 160t
 schedule clear sg:game/border/update
 #schedule clear sg:game/logic/restock/timer

@@ -9,6 +9,8 @@ function sg:game/spawning/platforms/begin
 #set restocking BEFORE chests are generated
 scoreboard players set $Restocking chestRestock 0
 function sg:game/chests/restock/start
+
+#setup players
 function sg:game/spawning/players/check_mode
 function sg:game/spawning/spectating/init
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectating/join
@@ -40,3 +42,4 @@ gamerule naturalRegeneration true
 gamerule keepInventory false
 difficulty hard
 time set 6000
+scoreboard players set $GameOver win 0
