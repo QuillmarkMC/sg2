@@ -20,3 +20,5 @@ bossbar set sg:loot visible false
 tag @a add SGResetPlayer
 
 stopsound @a record sg:music.deathmatch
+stopsound @a record sg:music.grace
+stopsound @a record sg:music.stinger
