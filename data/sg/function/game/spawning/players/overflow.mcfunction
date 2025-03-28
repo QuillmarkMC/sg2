@@ -2,5 +2,7 @@
 tellraw @a [{"text":"[!] ","color":"gray","bold": true},{"translate":"text.game.spectator.overflow","bold": false,"color": "white"}]
 
 tag @s remove SGPlaying
+tag @s remove SGNotSpawned
 team join spectator
+scoreboard players reset @s teamID
 function sg:game/spawning/spectating/join

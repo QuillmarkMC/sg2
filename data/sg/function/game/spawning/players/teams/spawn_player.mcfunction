@@ -1,4 +1,4 @@
-execute if score $Debug var matches 3.. run say sg:game/spawning/players/teams/spawn_player
+execute if score $Debug var matches 2.. run say sg:game/spawning/players/teams/spawn_player
 
 # @s = current player getting spawned
 execute if score $PlayerCount var >= $MAX_PLAYERS var run return run function sg:game/spawning/players/overflow
