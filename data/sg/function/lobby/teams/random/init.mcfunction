@@ -35,3 +35,7 @@ data merge storage sg:teams {random_data:{Colors:[\
         "E016"\
     ]}\
 }
+
+data remove storage sg:teams random_data.Index
+data remove storage sg:teams random_data.ID
+data remove storage sg:teams random_data.Name
