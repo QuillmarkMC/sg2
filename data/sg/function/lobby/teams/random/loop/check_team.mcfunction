@@ -1,3 +1,5 @@
+execute if score $Debug var matches 3.. run say sg:lobby/teams/random/loop/check_team
+
 #called with sg:teams random_data
 #if
 $execute store result score #TempTeam teamID if entity @a[team=$(ID)]
