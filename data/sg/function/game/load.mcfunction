@@ -8,6 +8,7 @@ scoreboard players operation $State gameState = $Game gameState
 function sg:game/spawning/platforms/begin
 #set restocking BEFORE chests are generated
 scoreboard players set $Restocking chestRestock 0
+scoreboard players set $CornucopiaLootState chestRestock 0
 function sg:game/chests/restock/start
 
 #setup players
@@ -37,6 +38,7 @@ scoreboard players operation $TotalPlayers win = $CurrentPlayers win
 
 #update match id
 scoreboard players add $Global matchID 1
+scoreboard players operation @a matchID = $Global matchID
 
 gamerule fallDamage true
 gamerule showDeathMessages true

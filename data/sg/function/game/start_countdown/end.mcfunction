@@ -12,9 +12,6 @@ execute as @a at @s run playsound block.anvil.place ambient @s ~ ~ ~ 0.75
 #Unleash the beasts
 execute as @a[tag=SGPlaying,gamemode=!spectator] at @s run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace barrier
 
-#assign match IDs to handle reconnecting players
-scoreboard players operation @a matchID = $Global matchID
-
 #destroy timer model
 kill @e[type=item_display,tag=SGCountdownTimer,limit=1]
 scoreboard players set $CountdownTimer.State timers 0

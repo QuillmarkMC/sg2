@@ -15,7 +15,7 @@
                       "type": "minecraft:score",
                       "target": {
                         "type": "minecraft:fixed",
-                        "name": "$Restocking"
+                        "name": "$CornucopiaLootState"
                       },
                       "score": "chestRestock"
                     },
@@ -34,7 +34,7 @@
                       "type": "minecraft:score",
                       "target": {
                         "type": "minecraft:fixed",
-                        "name": "$Restocking"
+                        "name": "$CornucopiaLootState"
                       },
                       "score": "chestRestock"
                     },
