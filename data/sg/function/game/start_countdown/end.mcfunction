@@ -17,7 +17,7 @@ scoreboard players operation @a matchID = $Global matchID
 
 #destroy timer model
 kill @e[type=item_display,tag=SGCountdownTimer,limit=1]
-scoreboard players set $CountdownTimerActivated timers 0
+scoreboard players set $CountdownTimer.State timers 0
 
 #bossbar
 function sg:game/border/state/grace with storage sg:options Options

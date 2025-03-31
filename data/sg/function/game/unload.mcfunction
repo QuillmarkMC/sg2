@@ -1,9 +1,11 @@
 kill @e[type=marker,tag=SGSpawnMarker]
+kill @e[type=item_display,tag=SGCountdownTimer,limit=1]
 
 scoreboard players reset * death
 scoreboard players reset * deathDelayTimer
 scoreboard players reset * playerPosition
 scoreboard players reset * combatTimer
+scoreboard players set $CountdownTimer.State timers 0
 
 schedule clear sg:game/end_game/end/fireworks/schedule
 schedule clear sg:game/chests/restock/start
