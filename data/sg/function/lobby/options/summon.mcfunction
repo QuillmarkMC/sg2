@@ -1,6 +1,9 @@
 #################
 # MAIN SETTINGS #
 #################
+#background
+summon minecraft:item_display 35522.00162788487 63.0 35496.5 {item: {components: {"minecraft:item_model": "lobby:menu/wall/main"}, count: 1, id: "minecraft:phantom_membrane"}, transformation: {left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [11.000001f, 4.0000014f, 0.01f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
+
 #map title
 summon minecraft:item_display 35522.03365589804 64.0 35496.5 {item: {count: 1, id: "minecraft:blue_stained_glass_pane"}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.9999998f, 0.99999994f, 1.0000006f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 
@@ -66,6 +69,9 @@ summon interaction 35521.87865589806 61.6825 35491.5625 {width:0.38f,height:0.51
 ####################
 # GENERAL SETTINGS #
 ####################
+#background
+summon minecraft:item_display 35528.5 63.0 35504.99853997208 {item: {components: {"minecraft:item_model": "lobby:menu/wall/general"}, count: 1, id: "minecraft:phantom_membrane"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [7.0f, 4.0f, 0.01f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
+
 summon minecraft:item_display 35528.5 64.5 35504.97174602231 {item: {count: 1, id: "minecraft:blue_stained_glass_pane"}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.0f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35528.5 64.375 35504.940030088124 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '"General Settings"', text_opacity: 0, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 
@@ -140,6 +146,9 @@ summon interaction 35525.75 61.2475 35505.189746022304 {width:0.501f,height:0.50
 ###################
 # BORDER SETTINGS #
 ###################
+#background
+summon minecraft:item_display 35528.5 63.0 35488.001708984375 {item: {components: {"minecraft:item_model": "lobby:menu/wall/border"}, count: 1, id: "minecraft:phantom_membrane"}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [7.0f, 4.0f, 0.01f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
+
 summon minecraft:item_display 35528.5 64.375 35488.03173828125 {item: {count: 1, id: "minecraft:blue_stained_glass_pane"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.0f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35528.5 64.25 35488.063720703125 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '"Border Settings"', text_opacity: 0,Tags:["SGLobbyOptions"]}
 
