@@ -15,6 +15,7 @@ schedule clear sg:game/border/state/prep_shrink
 schedule clear sg:lobby/load
 schedule clear sg:game/end_game/end/transition
 schedule clear sg:game/start_countdown/update
+schedule clear sg:game/chests/music/loop
 
 bossbar set sg:border visible false
 bossbar set sg:loot visible false
@@ -24,3 +25,4 @@ tag @a add SGResetPlayer
 stopsound @a record sg:music.deathmatch
 stopsound @a record sg:music.grace
 stopsound @a record sg:music.stinger
+stopsound @a record sg:music.loot
