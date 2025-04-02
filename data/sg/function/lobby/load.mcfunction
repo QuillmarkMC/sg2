@@ -18,6 +18,9 @@ gamerule naturalRegeneration true
 gamerule keepInventory true
 difficulty easy
 
+#resummon entities when all chunks are loaded
+function sg:lobby/entities/check_loaded
+
 function sg:lobby/options/set_default
 function sg:lobby/music/init
 function sg:lobby/arena/init

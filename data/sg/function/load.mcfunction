@@ -60,15 +60,18 @@ execute unless score $SetConst var matches 1.. run function sg:general/set_const
 team add spectator
 team modify spectator color dark_gray
 team modify spectator collisionRule never
+team modify ready prefix {"text":"\uE021","color":"white","shadow_color":0}
 team add ready
 team modify ready color dark_green
 team modify ready collisionRule never
+team modify ready prefix {"text":"\uE020","color":"white","shadow_color":0}
 team add lobby
 team modify lobby color white
 team modify lobby collisionRule never
 team add random
 team modify random color light_purple
 team modify random collisionRule never
+team modify ready prefix {"text":"\uE022","color":"white","shadow_color":0}
 
 #Forceload
 function sg:general/forceload/lobby
