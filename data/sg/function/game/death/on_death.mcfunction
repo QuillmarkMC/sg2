@@ -10,4 +10,4 @@ scoreboard players reset @s combatTimer
 function sg:game/spawning/spectating/join
 scoreboard players set @s deathDelayTimer 1
 function sg:game/end_game/check_win
-scoreboard players set @s death 0
+#scoreboard players set @s death 0

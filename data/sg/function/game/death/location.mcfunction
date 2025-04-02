@@ -15,3 +15,5 @@ scoreboard players reset @s deathDelayTimer
 
 #playsound
 execute at @s run playsound entity.wither.death ambient @s ~ ~ ~ 1 1
+
+scoreboard players set @s death 0

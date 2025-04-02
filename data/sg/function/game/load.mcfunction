@@ -22,6 +22,8 @@ clear @a
 execute as @a run spawnpoint @s 0 127 1
 
 #map events
+function sg:game/map_events/load
+function sg:game/map_events/check_loaded
 
 #timer model
 summon item_display 0.5 79.5 0.5 {teleport_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:pufferfish_bucket",count:1,components:{"minecraft:custom_model_data":{floats:[15]},item_model:"sg:timer"}},Tags:["SGCountdownTimer"]}

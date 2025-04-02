@@ -13,6 +13,7 @@ tag @s remove SGOutOfBounds
 tag @s remove SGTeamLead
 tag @s remove SGArenaFighter
 scoreboard players reset @s teamID
+scoreboard players reset @s openChest
 
 execute if score $State gameState = $Lobby gameState run function sg:general/player/reset/lobby
 execute if score $State gameState = $Game gameState run function sg:general/player/reset/game
