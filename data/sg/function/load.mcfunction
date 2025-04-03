@@ -45,7 +45,8 @@ scoreboard objectives add matchID dummy
 execute unless score $Global matchID matches 1.. run scoreboard players set $Global matchID 0
 scoreboard objectives add chestRestock dummy
 scoreboard objectives add border dummy
-scoreboard objectives add death minecraft.custom:time_since_death
+#scoreboard objectives add death minecraft.custom:time_since_death
+scoreboard objectives add death deathCount
 scoreboard objectives add deathDelayTimer dummy
 scoreboard objectives add playerPosition dummy
 scoreboard objectives add combatTimer dummy
