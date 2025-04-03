@@ -1,6 +1,6 @@
 function sg:lobby/inventory/default_clear
 
-item replace entity @s hotbar.0 with air
+item replace entity @s hotbar.0 with warped_fungus_on_a_stick[unbreakable={show_in_tooltip:false},hide_additional_tooltip={},item_model="minecraft:ender_eye",custom_name='{"translate": "text.lobby.teleporter.name","color": "dark_aqua"}']
 item replace entity @s hotbar.1 with wooden_sword[custom_name='{"translate":"text.lobby.arena.sword.name","color":"yellow","bold":false,"italic":false}',unbreakable={show_in_tooltip:false},hide_additional_tooltip={}]
 item replace entity @s hotbar.2 with air
 item replace entity @s hotbar.3 with air

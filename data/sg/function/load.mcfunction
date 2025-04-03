@@ -35,6 +35,7 @@ scoreboard players set $Lobby.Parkour respawnState 2
 scoreboard objectives add parkourCheckpoint dummy
 scoreboard objectives add parkourTimer dummy
 scoreboard objectives add lobbyMusic dummy
+scoreboard objectives add click used:warped_fungus_on_a_stick
 
 #game
 scoreboard objectives add platformVar dummy
