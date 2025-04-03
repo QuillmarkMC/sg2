@@ -1,0 +1,1 @@
+say sg:lobby/options/actions/chest_restock_mode/left_arrow

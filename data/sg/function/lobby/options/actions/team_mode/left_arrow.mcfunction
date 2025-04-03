@@ -1,0 +1,1 @@
+say sg:lobby/options/actions/team_mode/left_arrow

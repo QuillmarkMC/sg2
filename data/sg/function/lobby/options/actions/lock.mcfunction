@@ -1,0 +1,1 @@
+say sg:lobby/options/actions/lock

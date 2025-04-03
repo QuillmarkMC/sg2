@@ -1,0 +1,1 @@
+say sg:lobby/options/actions/max_team_size/help

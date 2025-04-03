@@ -1,0 +1,1 @@
+say sg:lobby/options/actions/border_starting_size/edit
