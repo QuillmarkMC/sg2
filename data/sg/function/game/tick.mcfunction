@@ -23,6 +23,6 @@ execute if score $CountdownTimer.State timers matches 1.. run function sg:game/s
 #library door
 execute if score $LibraryDoor events matches 0 if block -352 82 -288 lever[powered=true] run function sg:game/map_events/library/open
 #donut exit
-execute if score $DonutExit events matches 0 if entity @a[predicate=sg:game/donut/exit] run function sg:game/map_events/donut/exit/explode
+execute if score $DonutExit events matches 0 if entity @a[predicate=sg:game/donut/exit,gamemode=!spectator] run function sg:game/map_events/donut/exit/explode
 #donut entrance
 execute if score $DonutEntrance events matches 0 as @a[scores={openChest=1..},gamemode=!spectator] run function sg:game/map_events/donut/entrance/check_location
