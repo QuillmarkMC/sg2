@@ -8,3 +8,6 @@ execute if score $MaxTeamSize options matches 1 if score $ReadyNum lobbyVar >= $
 execute unless score $MaxTeamSize options matches 1 if score $ReadyNum lobbyVar >= $MAX_PLAYERS var run tellraw @s [{"text":"[!] ","color":"dark_red","bold": true},{"translate":"text.lobby.start.warn.max_players","color":"white","bold": false,"with": [{"score": {"name": "$MAX_PLAYERS","objective": "var"}}]}]
 
 function sg:lobby/start_logic/countdown/count
+
+execute as @a run function sg:lobby/options/trigger/reset_tags
+scoreboard players reset * value

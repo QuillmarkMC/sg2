@@ -32,4 +32,7 @@ execute if score $Locked options matches 1 unless entity @a[tag=Admin] run funct
 execute as @a[scores={cancel=1..}] run function sg:lobby/start_logic/interrupt/check_permission
 execute if score $Countdown timers matches 0.. run scoreboard players enable @a cancel
 
+#options edit value trigger
+execute as @a[scores={value=-2147483648..2147483647}] unless score @s value matches 0 run function sg:lobby/options/trigger/value
+
 kill @e[type=item]

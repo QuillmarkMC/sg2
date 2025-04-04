@@ -1,1 +1,0 @@
-say sg:lobby/options/actions/team_mode/right_arrow
