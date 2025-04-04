@@ -1,5 +1,5 @@
 tellraw @a [{"text":"[!] ","color":"aqua","bold": true},{"translate":"text.lobby.start.begin","bold": false,"with": [{"score": {"name": "$LobbyCountdown","objective": "timers"},"color": "white"}],"color": "white"}]
-tellraw @a [{"translate":"text.lobby.start.cancel.prompt","color":"red","bold": true,"clickEvent": {"action":"run_command","value": "/function sg:lobby/start_logic/interrupt/check_permission"},"hoverEvent":{"action":"show_text","contents":[{"translate":"text.lobby.start.cancel.hover","italic":true,"color":"gray"}]}}]
+tellraw @a [{"translate":"text.lobby.start.cancel.prompt","color":"red","bold": true,"clickEvent": {"action":"run_command","value": "/trigger cancel"},"hoverEvent":{"action":"show_text","contents":[{"translate":"text.lobby.start.cancel.hover","italic":true,"color":"gray"}]}}]
 scoreboard players operation $Countdown timers = $LobbyCountdown timers
 execute if score $ReadyNum lobbyVar matches 1 run tellraw @s [{"text":"[!] ","color":"dark_red","bold": true},{"translate":"text.lobby.start.warn.min_players","color":"white","bold": false}]
 #solo (check for player cap var)
