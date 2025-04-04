@@ -1,1 +1,1 @@
-say sg:lobby/options/actions/grace_period/edit
+#say sg:lobby/options/actions/grace_period/edit

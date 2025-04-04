@@ -1,1 +1,1 @@
-say sg:lobby/options/actions/border_delay/edit
+#say sg:lobby/options/actions/border_delay/edit

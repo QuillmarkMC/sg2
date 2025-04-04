@@ -1,1 +1,1 @@
-say sg:lobby/options/actions/border_starting_size/edit
+#say sg:lobby/options/actions/border_starting_size/edit

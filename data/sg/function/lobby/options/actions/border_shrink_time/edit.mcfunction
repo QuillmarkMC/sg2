@@ -1,1 +1,1 @@
-say sg:lobby/options/actions/border_shrink_time/edit
+#say sg:lobby/options/actions/border_shrink_time/edit

@@ -1,1 +1,1 @@
-say sg:lobby/options/actions/loot_type/right_arrow
+#say sg:lobby/options/actions/loot_type/right_arrow
