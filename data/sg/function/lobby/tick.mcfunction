@@ -25,4 +25,7 @@ execute as @a[predicate=sg:lobby/team_select] if items entity @s weapon.offhand 
 #click detection
 execute as @a[scores={click=1..}] run function sg:lobby/inventory/click/teleport
 
+#unlock settings if no admins online
+execute if score $Locked options matches 1 unless entity @a[tag=Admin] run function sg:lobby/options/actions/lock/auto_unlock
+
 kill @e[type=item]

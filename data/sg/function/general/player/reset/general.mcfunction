@@ -12,6 +12,7 @@ tag @s remove SGWinner
 tag @s remove SGOutOfBounds
 tag @s remove SGTeamLead
 tag @s remove SGArenaFighter
+tag @s remove Admin
 scoreboard players reset @s teamID
 scoreboard players reset @s openChest
 

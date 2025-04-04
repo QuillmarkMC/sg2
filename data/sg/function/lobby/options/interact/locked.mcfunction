@@ -1,2 +1,2 @@
-#tellraw prompt to give admin role
-#playsound
+tellraw @s [{"text":"[!] ","color":"dark_red","bold": true},{"translate": "text.lobby.options.actions.lock.no_permission","color":"white","with": [{"translate":"text.lobby.options.actions.lock.no_permission.click","underlined": true,"color": "yellow","clickEvent": {"action":"suggest_command","value": "/function sg:lobby/options/actions/lock/grant_permission"},"hoverEvent":{"action":"show_text","contents":[{"translate":"text.lobby.options.actions.lock.no_permission.hover","italic":true,"color":"gray"}]}}]}]
+execute at @s run playsound block.note_block.didgeridoo ambient @s ~ ~ ~ 1 1
