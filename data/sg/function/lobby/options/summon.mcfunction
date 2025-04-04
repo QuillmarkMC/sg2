@@ -5,7 +5,7 @@
 summon minecraft:item_display 35522.00162788487 63.0 35496.5 {item: {components: {"minecraft:item_model": "lobby:menu/wall/main"}, count: 1, id: "minecraft:phantom_membrane"}, transformation: {left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [11.000001f, 4.0000014f, 0.01f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 
 #map title
-summon minecraft:item_display 35522.03365589804 64.0 35496.5 {item: {count: 1, id: "minecraft:blue_stained_glass_pane"}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.9999998f, 0.99999994f, 1.0000006f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
+summon minecraft:item_display 35522.02942091772 64.0625 35496.5 {item: {components: {"minecraft:item_model": "lobby:title"}, count: 1, id: "minecraft:blue_stained_glass_pane"}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.2000005f, 2.2000005f, 0.40000007f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 
 #start game
 summon minecraft:item_display 35522.03365589804 62.375 35496.5 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_48x20_green"}}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.0000007f, 1.2500002f, 1.0000006f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
