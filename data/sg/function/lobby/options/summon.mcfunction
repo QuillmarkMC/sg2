@@ -40,7 +40,7 @@ summon interaction 35521.565355898034 61.4975 35500.25 {width:1.001f,height:0.50
 #help
 summon minecraft:item_display 35522.03365589804 61.75 35499.375 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.49999997f, 0.5000001f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35522.07598699072 61.625 35499.400692474934 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.99999994f, 1.0f, 1.0000001f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
-summon interaction 35521.81565589805 61.4975 35499.375 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/max_team_size/help"}}]}
+summon interaction 35521.81565589805 61.4975 35499.375 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/max_team_size/help"}}]}
 
 #reset settings
 summon minecraft:item_display 35522.03365589804 64.25 35492.75 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_40x8_green"}}, transformation: {left_rotation: [0.0f, 0.70710677f, 0.0f, 0.70710677f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.4999998f, 0.5000002f, 1.0000006f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
@@ -91,7 +91,7 @@ summon interaction 35526.4375 63.495 35505.126746022295 {width:0.38f,height:0.51
 #help
 summon minecraft:item_display 35525.75 63.75 35504.97174602231 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35525.76617959145 63.625 35504.9375 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
-summon interaction 35525.75 63.4975 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/loot_type/help"}}]}
+summon interaction 35525.75 63.4975 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/loot_type/help"}}]}
 
 #chest restock mode
 #name
@@ -109,7 +109,7 @@ summon interaction 35526.4375 62.745 35505.126746022295 {width:0.38f,height:0.51
 #help
 summon minecraft:item_display 35525.75 63.0 35504.97174602231 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35525.76617959145 62.875 35504.9375 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
-summon interaction 35525.75 62.7475 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/chest_restock_mode/help"}}]}
+summon interaction 35525.75 62.7475 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/chest_restock_mode/help"}}]}
 
 #chest restock time
 #name
@@ -125,7 +125,7 @@ summon interaction 35526.75 61.9975 35505.44004602232 {width:1.001f,height:0.504
 #help
 summon minecraft:item_display 35525.75 62.25 35504.97174602231 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35525.76617959145 62.125 35504.9375 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
-summon interaction 35525.75 61.9975 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/chest_restock_time/help"}}]}
+summon interaction 35525.75 61.9975 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/chest_restock_time/help"}}]}
 
 #grace period
 #name
@@ -141,7 +141,7 @@ summon interaction 35526.75 61.2475 35505.44004602232 {width:1.001f,height:0.504
 #help
 summon minecraft:item_display 35525.75 61.5 35504.97174602231 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35525.76617959145 61.375 35504.9375 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
-summon interaction 35525.75 61.2475 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/grace_period/help"}}]}
+summon interaction 35525.75 61.2475 35505.189746022304 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/grace_period/help"}}]}
 
 ###################
 # BORDER SETTINGS #
@@ -166,7 +166,7 @@ summon interaction 35530.25 63.2475 35487.56343828124 {width:1.001f,height:0.504
 #help
 summon minecraft:item_display 35531.25 63.5 35488.03173828125 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35531.24135441044 63.375 35488.063720703125 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0,Tags:["SGLobbyOptions"]}
-summon interaction 35531.25 63.2475 35487.81373828126 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/border_starting_size/help"}}]}
+summon interaction 35531.25 63.2475 35487.81373828126 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/border_starting_size/help"}}]}
 
 #border delay
 #name
@@ -182,7 +182,7 @@ summon interaction 35530.25 62.3725 35487.56343828124 {width:1.001f,height:0.504
 #help
 summon minecraft:item_display 35531.25 62.625 35488.03173828125 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35531.24135441044 62.5 35488.063720703125 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0,Tags:["SGLobbyOptions"]}
-summon interaction 35531.25 62.3725 35487.81373828126 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/border_delay/help"}}]}
+summon interaction 35531.25 62.3725 35487.81373828126 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/border_delay/help"}}]}
 
 #border shrink time
 #name
@@ -198,7 +198,7 @@ summon interaction 35530.25 61.4975 35487.56343828124 {width:1.001f,height:0.504
 #help
 summon minecraft:item_display 35531.25 61.75 35488.03173828125 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_8x8_green"}}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35531.24135441044 61.6181640625 35488.063720703125 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.help"}', text_opacity: 0,Tags:["SGLobbyOptions"]}
-summon interaction 35531.25 61.4975 35487.81373828126 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/border_shrink_time/help"}}]}
+summon interaction 35531.25 61.4975 35487.81373828126 {width:0.501f,height:0.504f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:0,Function:"sg:lobby/options/actions/border_shrink_time/help"}}]}
 
 
 

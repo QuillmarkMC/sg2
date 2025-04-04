@@ -5,3 +5,5 @@ execute store result storage sg:teams find_leader_team_data.Index int 1 run scor
 
 scoreboard players set $TeamLeaveID lobbyVar -1
 function sg:lobby/teams/leaders/find_team/loop with storage sg:teams find_leader_team_data
+
+execute as @a[predicate=sg:lobby/team_select] run function sg:lobby/teams/inventory/update
