@@ -1,0 +1,1 @@
+data modify entity @e[type=text_display,tag=SGLobbyOptions.max_team_size,limit=1] text set value '{"score":{"name":"$MaxTeamSize","objective":"options"}}'

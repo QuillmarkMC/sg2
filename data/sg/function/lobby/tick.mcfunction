@@ -11,7 +11,7 @@ execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena/deserter] unless scor
 execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena/enter,gamemode=!spectator] run function sg:lobby/arena/enter
 
 #respawn dead players (place anytime after arena entrance check)
-execute as @a[scores={death=1..}] run function sg:lobby/death/on_death
+execute as @e[type=player,scores={death=1..}] run function sg:lobby/death/on_death
 
 #tick parkour logic per player
 execute as @a run function sg:lobby/parkour/tick
