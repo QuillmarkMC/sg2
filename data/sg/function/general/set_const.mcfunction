@@ -1,2 +1,2 @@
 scoreboard players set $SetConst var 1
-scoreboard players set $MAX_PLAYERS var 32
+scoreboard players set $MAX_PLAYERS var 50
