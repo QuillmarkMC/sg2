@@ -10,7 +10,7 @@ summon minecraft:item_display 35522.03365589804 64.0 35496.5 {item: {count: 1, i
 #start game
 summon minecraft:item_display 35522.03365589804 62.375 35496.5 {item: {count: 1, id: "minecraft:green_stained_glass_pane", components: {"minecraft:item_model":"lobby:menu/wall/button_48x20_green"}}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.0000007f, 1.2500002f, 1.0000006f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
 summon minecraft:text_display 35522.07598699072 62.1875 35496.5 {alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"text.lobby.options.display.start_game.name"}', text_opacity: 0, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.5000004f, 1.5f, 1.0000001f], translation: [0.0f, 0.0f, 0.0f]},Tags:["SGLobbyOptions"]}
-summon interaction 35520.56565589805 61.745 35496.5 {width:3.0f,height:1.2555f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/options/actions/start_game"}}]}
+summon interaction 35520.56565589805 61.745 35496.5 {width:3.0f,height:1.2555f,response:true,Tags:["SGLobbyOptions"],Passengers:[{id:"marker",Tags:["SGLobbyOptions"],data:{AdminLocked:1,Function:"sg:lobby/start_logic/check_num_players"}}]}
 
 #team mode
 #name

@@ -1,1 +1,1 @@
-say sg:lobby/options/actions/border_starting_size/help
+tellraw @s [{"text":"[?] ","color":"blue","bold": true},{"text": "How many blocks wide the border starts at.","color": "white","bold": false}]

@@ -5,4 +5,5 @@ execute as @a[team=random,sort=random] run function sg:lobby/teams/random/find_t
 team join spectator @a[team=lobby]
 tag @a[team=!spectator] add SGPlaying
 team leave @a[team=ready]
+scoreboard players reset * cancel
 schedule function sg:game/load 50t

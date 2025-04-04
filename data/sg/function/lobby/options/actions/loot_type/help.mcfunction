@@ -1,1 +1,1 @@
-say sg:lobby/options/actions/loot_type/help
+tellraw @s [{"text":"[?] ","color":"blue","bold": true},{"text": "What type of loot should be generated in chests: Pre-crafted items or materials needed to craft your own items.","color": "white","bold": false}]

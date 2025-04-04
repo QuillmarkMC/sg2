@@ -28,4 +28,8 @@ execute as @a[scores={click=1..}] run function sg:lobby/inventory/click/teleport
 #unlock settings if no admins online
 execute if score $Locked options matches 1 unless entity @a[tag=Admin] run function sg:lobby/options/actions/lock/auto_unlock
 
+#cancel start countdown trigger
+execute as @a[scores={cancel=1..}] run function sg:lobby/start_logic/interrupt/check_permission
+execute if score $Countdown timers matches 0.. run scoreboard players enable @a cancel
+
 kill @e[type=item]

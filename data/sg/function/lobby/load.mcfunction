@@ -6,8 +6,6 @@ scoreboard players operation $State gameState = $Lobby gameState
 
 function sg:game/border/set_lobby
 
-scoreboard players set $EntityLoad lobbyVar 0
-scoreboard players set $EntityLoadTimer lobbyVar 0
 scoreboard players set $Countdown timers -1
 scoreboard players set $ExpectedTeamLeads lobbyVar 0
 scoreboard players set $CurrentTeamLeads lobbyVar 0

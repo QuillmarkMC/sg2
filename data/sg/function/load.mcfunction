@@ -36,6 +36,7 @@ scoreboard objectives add parkourCheckpoint dummy
 scoreboard objectives add parkourTimer dummy
 scoreboard objectives add lobbyMusic dummy
 scoreboard objectives add click used:warped_fungus_on_a_stick
+scoreboard objectives add cancel trigger
 
 #game
 scoreboard objectives add platformVar dummy
