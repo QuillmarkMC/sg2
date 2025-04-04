@@ -1,1 +1,1 @@
-kill @e[tag=SGLobbyOptions]
+kill @e[type=#sg:options,tag=SGLobbyOptions]
