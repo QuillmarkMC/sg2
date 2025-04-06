@@ -70,3 +70,5 @@ recipe give @s shield
 
 recipe give @s golden_apple
 recipe give @s golden_carrot
+
+recipe give @s bundle

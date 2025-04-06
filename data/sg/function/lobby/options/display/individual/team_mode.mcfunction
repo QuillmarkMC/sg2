@@ -1,0 +1,2 @@
+execute if data storage sg:options {Options:{team_mode:"solo"}} run data modify entity @e[type=text_display,tag=SGLobbyOptions.team_mode,limit=1] text set value '{"translate":"text.lobby.options.display.team_mode.value.solo"}'
+execute if data storage sg:options {Options:{team_mode:"team"}} run data modify entity @e[type=text_display,tag=SGLobbyOptions.team_mode,limit=1] text set value '{"translate":"text.lobby.options.display.team_mode.value.team"}'

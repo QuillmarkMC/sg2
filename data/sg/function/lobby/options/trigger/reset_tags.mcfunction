@@ -1,0 +1,1 @@
+tag @s remove SGEdit.max_team_size

@@ -1,0 +1,5 @@
+data modify storage sg:options Options.team_mode set value "team"
+tellraw @a[team=ready] [{"text":"[!] ","color":"blue","bold": true},{"translate": "text.lobby.teams.disband.size_changed","color": "white","bold": false}]
+execute as @a[team=ready] run function sg:lobby/teams/leave/return_to_default
+function sg:lobby/teams/reset/delete_all
+execute as @a[predicate=sg:lobby/team_select] run function sg:lobby/teams/inventory/update

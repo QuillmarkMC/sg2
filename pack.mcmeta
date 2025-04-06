@@ -1,7 +1,8 @@
 {
     "pack": {
-        "pack_format": 48,
-        "description": "Datapack for survival games 2"
+        "pack_format": 61,
+        "description": "Datapack for Desolate Desert",
+        "supported_formats": [61, 61]
     },
     "filter": {
         "block": [

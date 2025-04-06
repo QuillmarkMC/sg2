@@ -1,0 +1,1 @@
+kill @e[type=#sg:options,tag=SGLobbyOptions]
