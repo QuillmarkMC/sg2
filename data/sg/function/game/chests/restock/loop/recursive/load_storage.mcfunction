@@ -6,3 +6,6 @@ execute if score $Debug var matches 3.. run say sg:game/chests/restock/loop/recu
 #$data modify storage sg:restock xyz set from storage sg:chests Chunks[$(ChunkIndex)].Chests[$(ChestIndex)].xyz
 $data modify storage sg:restock xyz set from storage sg:chests Chunks[$(ChunkIndex)].Pos
 function sg:game/chests/restock/loop/recursive/check_loaded with storage sg:restock
+
+
+##NOT CALLED

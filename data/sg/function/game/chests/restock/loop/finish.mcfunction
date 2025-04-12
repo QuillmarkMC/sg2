@@ -10,3 +10,5 @@ execute if score $Restocking chestRestock matches 1 if data storage sg:options {
 execute if score $Restocking chestRestock matches 1 as @a at @s run playsound minecraft:block.chest.open ambient @s ~ ~ ~ 0.8 0.8
 scoreboard players set $InProgress chestRestock 0
 bossbar set sg:loot visible false
+
+schedule clear sg:game/chests/restock/loop/recursive/get_scheduled_idiot
