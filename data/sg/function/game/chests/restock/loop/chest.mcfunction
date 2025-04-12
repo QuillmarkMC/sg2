@@ -14,6 +14,6 @@ execute if score $Restocking chestRestock matches 1 run function sg:game/chests/
 
 #recursive call, count all chests within chunk
 execute store result storage sg:restock ChestIndex int 1 run scoreboard players remove $ChestIndex chestRestock 1
+execute if score $ChestIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/recursive/chunk
 execute unless score $ChestIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/chest with storage sg:restock
 #execute if score $ChestIndex chestRestock matches ..-1 unless score $MasterChunkIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/recursive/chunk
-execute if score $ChestIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/recursive/chunk
