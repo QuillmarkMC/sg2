@@ -6,7 +6,7 @@ data merge storage sg:options {Defaults:\
     chest_restock_time:600,\
     chest_restock_mode:"cornucopia",\
     grace_period:30,\
-    max_team_size:2,\
+    max_team_size:1,\
     loot_type:0\
     }\
 }
