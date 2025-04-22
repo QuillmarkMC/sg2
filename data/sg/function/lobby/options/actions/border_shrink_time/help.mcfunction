@@ -1,1 +1,1 @@
-tellraw @s [{"text":"[!] ","color":"blue","bold": true},{"text": "Number of seconds the border requires to shrink to its minimum size after it starts shrinking.","color": "white","bold": false}]
+tellraw @s [{"text":"[?] ","color":"blue","bold": true},{"translate": "text.lobby.options.actions.help.border_shrink_time","color": "white","bold": false}]
