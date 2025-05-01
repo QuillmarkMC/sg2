@@ -20,8 +20,7 @@ execute as @a run function sg:lobby/parkour/tick
 execute as @a run function sg:lobby/music/tick
 
 #MC-251555 lol
-#execute as @a[predicate=sg:lobby/team_select] if items entity @s weapon.offhand * run advancement grant @s only sg:inv_changed
-execute as @a[predicate=sg:lobby/team_select] if items entity @s weapon.offhand * run item replace entity @s weapon.offhand with phantom_membrane
+execute as @a[predicate=sg:lobby/team_select] if items entity @s weapon.offhand * run advancement grant @s only sg:inv_changed
 
 #click detection
 execute as @a[scores={click=1..}] run function sg:lobby/inventory/click/teleport
