@@ -16,7 +16,7 @@ item replace entity @s enderchest.14 with phantom_membrane[item_model="lobby:men
 item replace entity @s enderchest.15 with phantom_membrane[item_model="lobby:menu/teams/dark_purple",custom_data={TeamSelect:true,CreateTeam:true,Color:"dark_purple",Prefix:"E012"},lore=[{"translate": "text.lobby.teams.item.create.lore","color": "gray","italic": true}],custom_name={"translate":"text.lobby.teams.item.create.dark_purple","color": "dark_purple","italic": false,"bold": true}]
 item replace entity @s enderchest.16 with phantom_membrane[item_model="lobby:menu/teams/gray",custom_data={TeamSelect:true,CreateTeam:true,Color:"gray",Prefix:"E014"},lore=[{"translate": "text.lobby.teams.item.create.lore","color": "gray","italic": true}],custom_name={"translate":"text.lobby.teams.item.create.gray","color": "gray","italic": false,"bold": true}]
 item replace entity @s enderchest.17 with phantom_membrane[item_model="lobby:menu/teams/black",custom_data={TeamSelect:true,CreateTeam:true,Color:"black",Prefix:"E016"},lore=[{"translate": "text.lobby.teams.item.create.lore","color": "gray","italic": true}],custom_name={"translate":"text.lobby.teams.item.create.black","color": "black","italic": false,"bold": true}]
-item replace entity @s enderchest.18 with phantom_membrane[item_model="lobby:menu/gui/team_select_2",custom_data={TeamSelect:true}]
+item replace entity @s enderchest.18 with phantom_membrane[item_model="lobby:menu/gui/team_select_2",custom_data={TeamSelect:true},tooltip_display={hide_tooltip:true}]
 item replace entity @s enderchest.19 with air
 item replace entity @s enderchest.20 with air
 item replace entity @s enderchest.21 with air

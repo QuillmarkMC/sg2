@@ -16,7 +16,7 @@ item replace entity @s enderchest.9 with air
 #item replace entity @s enderchest.15 with air
 #item replace entity @s enderchest.16 with air
 item replace entity @s enderchest.17 with air
-item replace entity @s enderchest.18 with phantom_membrane[item_model="lobby:menu/gui/team_select_1",custom_data={TeamSelect:true}]
+item replace entity @s enderchest.18 with phantom_membrane[item_model="lobby:menu/gui/team_select_1",custom_data={TeamSelect:true},tooltip_display={hide_tooltip:true}]
 item replace entity @s enderchest.19 with air
 function sg:lobby/teams/inventory/states/arrows/previous
 item replace entity @s enderchest.21 with phantom_membrane[item_model="lobby:menu/gui/random",custom_data={TeamSelect:true,Random:true},lore=[{"translate": "text.lobby.teams.item.random.lore","color": "gray","italic": true}],custom_name={"translate":"text.lobby.teams.item.random.name","color": "light_purple","italic": false,"bold": true}]
