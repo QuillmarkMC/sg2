@@ -26,4 +26,3 @@ function sg:game/deathmatch/events/reset
 scoreboard players set $GameOver win 1
 schedule function sg:game/end_game/end/transition 160t
 schedule clear sg:game/border/update
-#schedule clear sg:game/logic/restock/timer

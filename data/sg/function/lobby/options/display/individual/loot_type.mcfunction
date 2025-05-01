@@ -1,2 +1,2 @@
-execute if data storage sg:options {Options:{loot_type:0}} run data modify entity @e[type=text_display,tag=SGLobbyOptions.loot_type,limit=1] text set value '{"translate":"text.lobby.options.display.loot_type.value.materials"}'
-execute if data storage sg:options {Options:{loot_type:1}} run data modify entity @e[type=text_display,tag=SGLobbyOptions.loot_type,limit=1] text set value '{"translate":"text.lobby.options.display.loot_type.value.crafted"}'
+execute if data storage sg:options {Options:{loot_type:0}} run data modify entity @e[type=text_display,tag=SGLobbyOptions.loot_type,limit=1] text set value {"translate":"text.lobby.options.display.loot_type.value.materials"}
+execute if data storage sg:options {Options:{loot_type:1}} run data modify entity @e[type=text_display,tag=SGLobbyOptions.loot_type,limit=1] text set value {"translate":"text.lobby.options.display.loot_type.value.crafted"}
