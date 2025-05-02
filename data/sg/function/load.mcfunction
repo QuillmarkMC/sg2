@@ -90,3 +90,5 @@ execute unless score $State gameState = $Dev gameState run function sg:general/g
 execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/load
 execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/options/reset
 scoreboard players set $Loaded var 1
+
+setworldspawn 35531 60 35496
