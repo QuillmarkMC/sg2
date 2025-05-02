@@ -4,7 +4,7 @@
       {
         "rolls": {
           "min": 3,
-          "max": 6
+          "max": 5
         },
         "entries": [
           {
@@ -16,7 +16,7 @@
                 "function": "minecraft:set_count",
                 "count": {
                   "min": 2,
-                  "max": 5
+                  "max": 4
                 }
               }
             ]
@@ -44,7 +44,7 @@
                 "function": "minecraft:set_count",
                 "count": {
                   "min": 1,
-                  "max": 4
+                  "max": 3
                 }
               }
             ]
@@ -58,7 +58,7 @@
                 "function": "minecraft:set_count",
                 "count": {
                   "min": 1,
-                  "max": 4
+                  "max": 2
                 }
               }
             ]
@@ -95,6 +95,54 @@
             "type": "loot_table",
             "weight": 200,
             "value": "sg:chests/food/common"
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 1,
+          "max": 1
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "phantom_membrane",
+            "functions": [
+              {
+                "function": "set_components",
+                "components": {
+                  "item_model": "sg:library_key",
+                  "custom_data": {"LibraryKey":true}
+                }
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": -475,
+                  "max": -269
+                },
+                "y": {
+                  "min": 58,
+                  "max": 100
+                },
+                "z": {
+                  "min": -436,
+                  "max": -199
+                }
+              },
+              "dimension": "minecraft:overworld"
+            }
+          },
+          {
+            "condition": "random_chance",
+            "chance": 0.05
           }
         ]
       }
