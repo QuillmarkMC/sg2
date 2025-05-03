@@ -19,6 +19,7 @@ scoreboard players reset @s teamID
 scoreboard players reset @s openChest
 scoreboard players reset @s cancel
 scoreboard players reset @s value
+scoreboard players operation @s boilingWater = $DamageInterval boilingWater
 
 execute if score $State gameState = $Lobby gameState run function sg:general/player/reset/lobby
 execute if score $State gameState = $Game gameState run function sg:general/player/reset/game

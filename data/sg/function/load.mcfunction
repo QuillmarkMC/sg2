@@ -59,6 +59,8 @@ scoreboard players set $LobbyCountdown timers 10
 scoreboard players set $TotalFireworks var 3
 scoreboard objectives add events dummy
 scoreboard objectives add openChest minecraft.custom:open_chest
+scoreboard objectives add boilingWater dummy
+scoreboard players set $DamageInterval boilingWater 20
 
 execute unless score $SetConst var matches 1.. run function sg:general/set_const
 
