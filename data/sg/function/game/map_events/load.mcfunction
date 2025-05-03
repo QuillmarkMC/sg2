@@ -1,5 +1,6 @@
-#library maze
-forceload add -350 -287
+#library attic
+forceload add -372 -296
+forceload add -335 -296
 
 #donut exit
 forceload add -354 199

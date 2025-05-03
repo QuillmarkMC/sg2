@@ -1,3 +1,61 @@
 {
-  
-}
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "min": 2,
+          "max": 3
+        },
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 400,
+            "value": "sg:chests/armor/gold"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 400,
+            "value": "sg:chests/weapons/gold"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 300,
+            "name": "minecraft:arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 7
+                }
+              }
+            ]
+          },
+          {
+            "type": "loot_table",
+            "weight": 300,
+            "value": "sg:chests/food/rare"
+          },
+          {
+            "type": "loot_table",
+            "weight": 150,
+            "value": "sg:chests/enchants/rare"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 25,
+            "name": "minecraft:golden_apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,3 +1,62 @@
 {
-    
-  }
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 100,
+          "value": "sg:chests/memes/horn"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 400,
+          "value": "sg:chests/weapons/stone"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 500,
+          "value": "sg:chests/weapons/gold"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 500,
+          "value": "sg:chests/armor/gold"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 200,
+          "value": "sg:chests/weapons/wood"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 300,
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:spyglass"
+        },
+        {
+          "type": "loot_table",
+          "weight": 300,
+          "value": "sg:chests/food/cornucopia"
+        }
+      ]
+    }
+  ]
+}

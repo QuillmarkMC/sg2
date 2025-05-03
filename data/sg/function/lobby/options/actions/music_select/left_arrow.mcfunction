@@ -1,1 +1,2 @@
-#say sg:lobby/options/actions/music_select/left_arrow
+#include music tracks from future survival games maps
+tellraw @s [{"text":"[!] ","color":"blue","bold": true},{"translate": "text.lobby.options.actions.music.error.no_available_options","color": "white","bold": false}]

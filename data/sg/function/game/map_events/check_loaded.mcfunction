@@ -1,8 +1,9 @@
 #called every tick after a game load, check to make sure all chunks with map events are loaded before resetting
 scoreboard players set $CheckLoaded var 1
 
-#library maze
-execute unless loaded -350 82 -287 run scoreboard players set $CheckLoaded var 0
+#library attic
+execute unless loaded -372 82 -296 run scoreboard players set $CheckLoaded var 0
+execute unless loaded -335 82 -296 run scoreboard players set $CheckLoaded var 0
 
 #donut exit
 execute unless loaded -354 91 199 run scoreboard players set $CheckLoaded var 0
