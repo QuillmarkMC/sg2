@@ -64,6 +64,11 @@
           "type": "loot_table",
           "weight": 200,
           "value": "sg:chests/food/uncommon"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:fishing_rod"
         }
       ]
     }

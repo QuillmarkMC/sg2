@@ -44,6 +44,11 @@
           "type": "loot_table",
           "weight": 250,
           "value": "sg:chests/food/common"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:fishing_rod"
         }
       ]
     }
