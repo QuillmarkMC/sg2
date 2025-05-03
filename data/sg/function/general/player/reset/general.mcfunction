@@ -12,6 +12,7 @@ tag @s remove SGWinner
 tag @s remove SGOutOfBounds
 tag @s remove SGTeamLead
 tag @s remove SGArenaFighter
+tag @s remove sgdev.Joined
 #tag @s remove Admin
 function sg:lobby/options/trigger/reset_tags
 scoreboard players reset @s teamID
