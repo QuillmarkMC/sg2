@@ -24,3 +24,5 @@ gamerule sendCommandFeedback false
 gamerule spawnChunkRadius 0
 gamerule spawnRadius 0
 gamerule projectilesCanBreakBlocks false
+#sus
+gamerule maxCommandChainLength 2147483647
