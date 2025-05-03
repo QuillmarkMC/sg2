@@ -1,3 +1,67 @@
 {
-    
-  }
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 300,
+          "value": "sg:chests/armor/leather"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 150,
+          "value": "sg:chests/weapons/stone"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 350,
+          "value": "sg:chests/weapons/wood"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 200,
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 75,
+          "value": "sg:chests/weapons/iron"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 75,
+          "value": "sg:chests/armor/iron"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 125,
+          "value": "sg:chests/weapons/gold"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 125,
+          "value": "sg:chests/armor/gold"
+        },
+        {
+          "type": "loot_table",
+          "weight": 200,
+          "value": "sg:chests/food/uncommon"
+        }
+      ]
+    }
+  ]
+}
