@@ -1,9 +1,6 @@
 #PLAYERS RELEASED, GAME BEGINS
-#start grace period
-tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin","bold": false,"with": [{"storage": "sg:options","nbt": "Options.grace_period"}],"color": "white"}]
-execute store result score $Countdown timers run data get storage sg:options Options.grace_period
-function sg:game/grace/count
-execute as @a at @s run playsound sg:music.grace record @s ~ ~ ~ 1.2 1
+#start pvp grace period
+function sg:game/grace/start
 
 #VFX
 summon lightning_bolt 0 71 0

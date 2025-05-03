@@ -9,6 +9,7 @@ execute unless score $Debug var matches 1.. run scoreboard players set $Debug va
 
 scoreboard objectives add math dummy
 scoreboard players set #2 math 2
+scoreboard players set #4 math 4
 scoreboard players set #10 math 10
 scoreboard players set #14 math 14
 scoreboard players set #20 math 20
@@ -89,8 +90,9 @@ function sg:general/forceload/cornucopia
 execute unless score $State gameState = $Dev gameState run function sg:general/gamerules
 
 #Initialize map on first load
-execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/load
+execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/options/set_default
 execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/options/reset
+execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/load
 scoreboard players set $Loaded var 1
 
 setworldspawn 35531 60 35496
