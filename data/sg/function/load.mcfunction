@@ -83,7 +83,7 @@ team modify random collisionRule never
 team modify random prefix {"text":"\uE022","color":"white","shadow_color":0}
 
 #Forceload
-function sg:general/forceload/lobby
+#function sg:general/forceload/lobby
 function sg:general/forceload/cornucopia
 
 #Gamerules
