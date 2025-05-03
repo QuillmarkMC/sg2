@@ -8,23 +8,27 @@
       },
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 600
+        },
+        {
           "type": "minecraft:loot_table",
           "weight": 100,
           "value": "sg:chests/memes/horn"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 400,
+          "weight": 200,
           "value": "sg:chests/weapons/stone"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 500,
+          "weight": 250,
           "value": "sg:chests/weapons/gold"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 500,
+          "weight": 250,
           "value": "sg:chests/armor/gold"
         },
         {
@@ -34,7 +38,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 300,
+          "weight": 175,
           "name": "minecraft:arrow",
           "functions": [
             {

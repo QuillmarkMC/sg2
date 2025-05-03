@@ -5,10 +5,6 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:empty",
-            "weight": 250
-          },
-          {
             "type": "minecraft:item",
             "weight": 125,
             "name": "minecraft:iron_axe"

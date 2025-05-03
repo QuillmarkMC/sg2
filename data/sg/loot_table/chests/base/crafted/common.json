@@ -4,27 +4,31 @@
     {
       "rolls": {
         "min": 2,
-        "max": 4
+        "max": 5
       },
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "weight": 300,
-          "value": "sg:chests/armor/leather"
+          "type": "minecraft:empty",
+          "weight": 700
         },
         {
           "type": "minecraft:loot_table",
           "weight": 200,
+          "value": "sg:chests/armor/leather"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 100,
           "value": "sg:chests/weapons/stone"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 300,
+          "weight": 200,
           "value": "sg:chests/weapons/wood"
         },
         {
           "type": "minecraft:item",
-          "weight": 300,
+          "weight": 150,
           "name": "minecraft:arrow",
           "functions": [
             {
@@ -38,7 +42,7 @@
         },
         {
           "type": "loot_table",
-          "weight": 200,
+          "weight": 250,
           "value": "sg:chests/food/common"
         }
       ]

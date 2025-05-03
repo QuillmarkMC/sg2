@@ -5,9 +5,6 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 200
-        },{
           "type": "minecraft:item",
           "weight": 100,
           "name": "minecraft:wooden_axe"

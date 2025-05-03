@@ -8,6 +8,10 @@
       },
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 500
+        },
+        {
           "type": "minecraft:loot_table",
           "value": "sg:chests/armor/iron",
           "weight": 200

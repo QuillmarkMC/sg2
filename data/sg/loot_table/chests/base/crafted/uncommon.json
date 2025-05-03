@@ -8,6 +8,10 @@
       },
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 700
+        },
+        {
           "type": "minecraft:loot_table",
           "weight": 300,
           "value": "sg:chests/armor/leather"

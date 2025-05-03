@@ -54,7 +54,7 @@
               "components": {
                 "item_model": "sg:library_key",
                 "custom_data": {"LibraryKey":true},
-                "custom_name": {"translate":"text.game.item.library_key.name","color":"yellow"},
+                "item_name": {"translate":"text.game.item.library_key.name","color":"yellow","italic":false},
                 "lore":[{"translate":"text.game.item.library_key.lore","color":"gray","italic": false}]
               }
             }
