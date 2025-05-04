@@ -7,7 +7,7 @@ summon lightning_bolt 0 71 0
 execute as @a at @s run playsound block.anvil.place ambient @s ~ ~ ~ 0.75
 
 #Unleash the beasts
-execute as @a[tag=SGPlaying,gamemode=!spectator] at @s run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace barrier
+execute as @a[tag=SGPlaying,gamemode=!spectator] at @s run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace brown_stained_glass
 
 #destroy timer model
 kill @e[type=item_display,tag=SGCountdownTimer,limit=1]
