@@ -8,7 +8,7 @@ summon item_display 35549.5 56.50123437365036 35496.5 {item:{id:"phantom_membran
 
 #map border
 summon item_display 35549.5 56.50521851832407 35496.5 {item:{id:"phantom_membrane",count:1,components:{item_model:"lobby:map_border"}},transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[10.0f,1.0f,10.0f]},Tags:["SGLobbyEntity","SGLobbyMapBorder"]}
-#TODO: update scale based on options after entity is summoned
+function sg:lobby/options/actions/border_starting_size/update_display
 #pvp arena logo
 summon item_display 35621.0 68.25 35496.5 {item:{id:"pufferfish",count:1,components:{item_model:"lobby:logo_big"}},transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.7071068f,0.0f,0.7071068f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[10.0f,10.0f,5.0f]},Tags:["SGLobbyEntity"]}
 #pvp arena glass ceiling
