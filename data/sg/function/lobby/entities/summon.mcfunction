@@ -15,5 +15,7 @@ summon item_display 35621.0 68.25 35496.5 {item:{id:"pufferfish",count:1,compone
 summon item_display 35596.5 77.1875 35496.5 {item:{id:"phantom_membrane",count:1,components:{item_model:"lobby:big_glass"}},transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[8.333333f,1.0f,8.333333f]},Tags:["SGLobbyEntity"]}
 #parkour fog
 summon item_display 35549.5 49.4375 35543.75 {item:{id:"phantom_membrane",count:1,components:{item_model:"lobby:fade"}},transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.7071068f,0.0f,0.7071068f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[20.0f,1.9375001f,10.0f]},Tags:["SGLobbyEntity"]}
+#guapo tank
+summon pufferfish 35506 61 35496 {Tags:["SGGuapo"],PersistenceRequired:true,CustomNameVisible:false,CustomName:{"text":"Guapo"},Silent:True,Invulnerable:true}
 
 function sg:lobby/entities/unload

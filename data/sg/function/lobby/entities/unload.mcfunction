@@ -11,3 +11,6 @@ forceload remove 35619 35495
 forceload remove 35596 35498
 #parkour fog
 forceload remove 35549 35543
+#guapo tank
+forceload remove 35507 35496
+forceload remove 35503 35496

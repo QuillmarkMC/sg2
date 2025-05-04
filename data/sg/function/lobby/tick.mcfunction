@@ -35,4 +35,7 @@ execute if score $Countdown timers matches 0.. run scoreboard players enable @a 
 #options edit value trigger
 execute as @a[scores={value=-2147483648..2147483647}] unless score @s value matches 0 run function sg:lobby/options/trigger/value
 
+#puff the fish
+execute as @e[type=pufferfish,tag=SGGuapo,limit=1] run data merge entity @s {PuffState:2}
+
 kill @e[type=item]
