@@ -15,6 +15,7 @@ execute as @a[scores={combatTimer=1..}] run scoreboard players remove @s combatT
 execute as @a[tag=SGPlaying,gamemode=!spectator] run function sg:game/out_of_bounds/check
 
 #prevent dead players from being respawned
+execute as @a[tag=SGDeadPlayer,gamemode=!spectator,tag=!SG.Bypass_Safety] run function sg:general/safety/respawn
 
 #rotate countdown timer
 execute if score $CountdownTimer.State timers matches 1.. run function sg:game/start_countdown/tick_timer

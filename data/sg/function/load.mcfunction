@@ -17,6 +17,7 @@ scoreboard players set #60 math 60
 scoreboard players set #1000 math 1000
 
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add safetyAlert dummy
 
 #lobby
 scoreboard objectives add lobbyVar dummy
