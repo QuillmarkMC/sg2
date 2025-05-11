@@ -14,5 +14,7 @@ forceload add 35549 35543
 #guapo tank
 forceload add 35507 35496
 forceload add 35503 35496
+#research beetle
+forceload add 35552 35471
 
 function sg:lobby/entities/check_loaded
