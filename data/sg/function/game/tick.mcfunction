@@ -29,4 +29,4 @@ execute if score $DonutEntrance events matches 0 as @a[scores={openChest=1..},ga
 execute as @a[predicate=sg:game/caldera/boiling_water,gamemode=!spectator] run function sg:game/map_events/caldera/tick
 
 #death barrier
-execute as @a[predicate=sg:game/death_barrier] run function sg:game/death_barrier/kill
+execute as @a[predicate=sg:game/death_barrier,gamemode=!spectator] run function sg:game/death_barrier/kill
