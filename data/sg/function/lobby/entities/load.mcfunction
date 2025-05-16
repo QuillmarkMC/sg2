@@ -16,5 +16,7 @@ forceload add 35507 35496
 forceload add 35503 35496
 #research beetle
 forceload add 35552 35471
+#credits
+forceload add 35609 35509
 
 function sg:lobby/entities/check_loaded

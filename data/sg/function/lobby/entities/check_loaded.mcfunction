@@ -20,6 +20,8 @@ execute unless loaded 35507 62 35496 run scoreboard players set $CheckLoaded var
 execute unless loaded 35503 62 35496 run scoreboard players set $CheckLoaded var 0
 #research beetle
 execute unless loaded 35552 61 35471 run scoreboard players set $CheckLoaded var 0
+#credits
+execute unless loaded 35609 79 35509 run scoreboard players set $CheckLoaded var 0
 
 execute if score $CheckLoaded var matches 0 run schedule function sg:lobby/entities/check_loaded 1t
 execute if score $CheckLoaded var matches 1 run function sg:lobby/entities/summon
