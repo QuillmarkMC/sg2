@@ -1,1 +1,1 @@
-kill @e[tag=SGLobbyCredits]
+kill @e[type=#sg:credits,tag=SGLobbyCredits]
