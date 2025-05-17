@@ -7,8 +7,8 @@ kill @e[tag=SGLibraryDoor,type=interaction]
 execute as @e[type=item_display,tag=SGLibraryDoor,limit=2] at @s run rotate @s ~90 0
 fill -335 82 -296 -335 83 -296 air
 fill -372 82 -296 -372 83 -296 air
-execute positioned -335 82 -296 run playsound block.copper_door.open ambient @a
-execute positioned -372 82 -296 run playsound block.copper_door.open ambient @a
+execute positioned -335 82 -296 run playsound block.iron_door.open ambient @a
+execute positioned -372 82 -296 run playsound block.iron_door.open ambient @a
 
 clear @s phantom_membrane[custom_data~{"LibraryKey":true}]
 
