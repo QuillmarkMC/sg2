@@ -2,4 +2,4 @@
 gamerule showDeathMessages false
 kill @s
 gamerule showDeathMessages true
-tellraw @a [{"text":"[!] ","color":"red","bold": true},{"translate":"text.game.combat.punish","color": "white","with": [{"selector": "@s"}],"bold": false}]
+tellraw @a [{"text":"[!] ","color":"red","bold": true},{"translate":"sg.game.combat.punish","color": "white","with": [{"selector": "@s"}],"bold": false}]

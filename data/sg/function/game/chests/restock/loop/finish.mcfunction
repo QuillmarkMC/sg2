@@ -5,8 +5,8 @@ execute if score $Restocking chestRestock matches 0 run function sg:game/start_c
 execute if score $Restocking chestRestock matches 0 as @a at @s run playsound minecraft:entity.wither.spawn ambient @s ~ ~ ~ 1 1
 execute if score $Restocking chestRestock matches 0 run stopsound @a record sg:music.loot
 execute if score $Restocking chestRestock matches 0 run schedule clear sg:game/chests/music/loop
-execute if score $Restocking chestRestock matches 1 if data storage sg:options {Options:{chest_restock_mode:"all"}} run tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.chest.restock.finish.all","bold": false,"color": "white"}]
-execute if score $Restocking chestRestock matches 1 if data storage sg:options {Options:{chest_restock_mode:"cornucopia"}} run tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.chest.restock.finish.cornucopia","bold": false,"color": "white"}]
+execute if score $Restocking chestRestock matches 1 if data storage sg:options {Options:{chest_restock_mode:"all"}} run tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"sg.game.chest.restock.finish.all","bold": false,"color": "white"}]
+execute if score $Restocking chestRestock matches 1 if data storage sg:options {Options:{chest_restock_mode:"cornucopia"}} run tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"translate":"sg.game.chest.restock.finish.cornucopia","bold": false,"color": "white"}]
 execute if score $Restocking chestRestock matches 1 as @a at @s run playsound minecraft:block.chest.open ambient @s ~ ~ ~ 0.8 0.8
 scoreboard players set $InProgress chestRestock 0
 bossbar set sg:loot visible false

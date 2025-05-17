@@ -11,6 +11,6 @@ execute unless score $Countdown timers matches 0.. if items entity @s player.cur
 execute unless score $Countdown timers matches 0.. if items entity @s player.cursor phantom_membrane[minecraft:custom_data~{Spectate:true}] run function sg:lobby/teams/click_logic/join/spectate
 execute unless score $Countdown timers matches 0.. if items entity @s player.cursor phantom_membrane[minecraft:custom_data~{Random:true}] run function sg:lobby/teams/click_logic/join/random
 
-execute if score $Countdown timers matches 0.. run tellraw @s [{"text":"[!] ","color":"dark_red","bold": true},{"translate":"text.lobby.teams.countdown_in_progress","color":"white","bold": false}]
+execute if score $Countdown timers matches 0.. run tellraw @s [{"text":"[!] ","color":"dark_red","bold": true},{"translate":"sg.lobby.teams.countdown_in_progress","color":"white","bold": false}]
 
 item replace entity @s player.cursor with air
