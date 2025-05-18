@@ -18,5 +18,6 @@ forceload add 35503 35496
 forceload add 35552 35471
 #credits
 forceload add 35609 35509
+forceload add 35609 35483
 
 function sg:lobby/entities/check_loaded
