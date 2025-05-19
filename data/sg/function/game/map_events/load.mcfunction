@@ -11,3 +11,6 @@ forceload add -342 306
 
 #guapo's castle castle
 forceload add -514 -340
+
+#temple pit
+forceload add 227 132
