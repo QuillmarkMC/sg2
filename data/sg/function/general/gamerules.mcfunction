@@ -15,7 +15,7 @@ gamerule doTraderSpawning false
 gamerule doWeatherCycle false
 gamerule drowningDamage true
 gamerule fireDamage true
-gamerule freezeDamage true
+gamerule freezeDamage false
 gamerule maxEntityCramming 999
 gamerule mobGriefing false
 gamerule playersSleepingPercentage 101
