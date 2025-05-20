@@ -9,4 +9,4 @@ function sg:lobby/options/display/individual/lock
 function sg:lobby/options/display/individual/loot_type
 function sg:lobby/options/display/individual/max_team_size
 function sg:lobby/options/display/individual/music_select
-function sg:lobby/options/display/individual/team_mode
+function sg:lobby/options/display/individual/anticheat

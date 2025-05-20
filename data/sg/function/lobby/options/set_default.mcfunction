@@ -8,6 +8,6 @@ data merge storage sg:options {Defaults:\
     grace_period:30,\
     max_team_size:1,\
     loot_type:0,\
-    anticheat:1\
+    anticheat:0\
     }\
 }
