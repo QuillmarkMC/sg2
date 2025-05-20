@@ -1,4 +1,5 @@
 #Death check
+execute as @a[tag=SGMarkedForDeath] run function sg:game/combat/marked_for_death
 execute as @a[scores={deathDelayTimer=0}] run function sg:game/death/location
 execute as @a[scores={deathDelayTimer=1..}] run scoreboard players remove @s deathDelayTimer 1
 execute as @a[scores={death=1..}] run function sg:game/death/on_death
