@@ -9,17 +9,27 @@
         "entries": [
           {
             "type": "minecraft:empty",
-            "weight": 550
+            "weight": 450
           },
           {
             "type": "minecraft:loot_table",
-            "weight": 250,
+            "weight": 100,
             "value": "sg:chests/armor/gold"
           },
           {
             "type": "minecraft:loot_table",
+            "weight": 100,
+            "value": "sg:chests/weapons/stone"
+          },
+          {
+            "type": "minecraft:loot_table",
             "weight": 250,
-            "value": "sg:chests/weapons/gold"
+            "value": "sg:chests/armor/iron"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 250,
+            "value": "sg:chests/weapons/iron"
           },
           {
             "type": "minecraft:item",
