@@ -1,6 +1,7 @@
 function sg:lobby/entities/kill
 function sg:lobby/options/summon
 function sg:lobby/credits/summon
+function sg:lobby/dance_floor/summon
 
 #map
 summon item_display 35549.5 56.50123437365036 35496.5 {item:{id:"phantom_membrane",count:1,components:{item_model:"lobby:map"}},transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,1.0f,0.0f,0.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[3.0f,1.0f,3.0f]},Tags:["SGLobbyEntity"]}

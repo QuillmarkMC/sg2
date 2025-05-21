@@ -23,6 +23,8 @@ execute unless loaded 35552 61 35471 run scoreboard players set $CheckLoaded var
 #credits
 execute unless loaded 35609 79 35509 run scoreboard players set $CheckLoaded var 0
 execute unless loaded 35609 79 35483 run scoreboard players set $CheckLoaded var 0
+#dance floor
+execute unless loaded 35601 61 35562 run scoreboard players set $CheckLoaded var 0
 
 execute if score $CheckLoaded var matches 0 run schedule function sg:lobby/entities/check_loaded 1t
 execute if score $CheckLoaded var matches 1 run function sg:lobby/entities/summon

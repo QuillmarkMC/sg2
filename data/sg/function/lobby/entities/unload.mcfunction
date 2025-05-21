@@ -19,3 +19,5 @@ forceload remove 35552 35471
 #credits
 forceload remove 35609 35509
 forceload remove 35609 35483
+#dance floor
+forceload remove 35601 35562

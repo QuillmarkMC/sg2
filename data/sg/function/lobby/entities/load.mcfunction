@@ -19,5 +19,7 @@ forceload add 35552 35471
 #credits
 forceload add 35609 35509
 forceload add 35609 35483
+#dance floor
+forceload add 35601 35562
 
 function sg:lobby/entities/check_loaded
