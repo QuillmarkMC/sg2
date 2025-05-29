@@ -1,6 +1,6 @@
 #automatically called when dev datapack is no longer detected
 scoreboard players set $DevLoaded var -1
-tellraw @a [{"text":"[!] ","color":"gold","bold": true},{"translate":"text.admin.dev.uninstall",color:"white",bold:false}]
+tellraw @a [{"text":"[!] ","color":"gold","bold": true},{"translate":"sg.admin.dev.uninstall",color:"white",bold:false}]
 
 scoreboard objectives remove sgdev.var
 scoreboard objectives remove sgdev.chestVar

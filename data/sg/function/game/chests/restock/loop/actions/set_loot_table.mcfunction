@@ -1,5 +1,5 @@
 execute if score $Debug var matches 2.. run say sg:game/chests/restock/loop/actions/set_loot_table
-$execute if score $Debug var matches 1.. unless loaded $(xyz) run tellraw @a[tag=Admin] [{"text":"[!] ","color":"gold","bold": true},{"translate":"text.admin.chest.error.set_loot_failed","bold": false,"color": "white","with": [{"text": "$(xyz)"}]}]
+$execute if score $Debug var matches 1.. unless loaded $(xyz) run tellraw @a[tag=Admin] [{"text":"[!] ","color":"gold","bold": true},{"translate":"sg.admin.chest.error.set_loot_failed","bold": false,"color": "white","with": [{"text": "$(xyz)"}]}]
 
 #called with storage sg:restock
 scoreboard players set $CancelThisChest chestRestock 0
