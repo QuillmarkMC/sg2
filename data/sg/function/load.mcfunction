@@ -9,6 +9,7 @@ execute unless score $Debug var matches 1.. run scoreboard players set $Debug va
 
 scoreboard objectives add math dummy
 scoreboard players set #2 math 2
+scoreboard players set #4 math 4
 scoreboard players set #10 math 10
 scoreboard players set #14 math 14
 scoreboard players set #20 math 20
@@ -16,6 +17,7 @@ scoreboard players set #60 math 60
 scoreboard players set #1000 math 1000
 
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add safetyAlert dummy
 
 #lobby
 scoreboard objectives add lobbyVar dummy
@@ -47,7 +49,6 @@ scoreboard objectives add matchID dummy
 execute unless score $Global matchID matches 1.. run scoreboard players set $Global matchID 0
 scoreboard objectives add chestRestock dummy
 scoreboard objectives add border dummy
-#scoreboard objectives add death minecraft.custom:time_since_death
 scoreboard objectives add death deathCount
 scoreboard objectives add deathDelayTimer dummy
 scoreboard objectives add playerPosition dummy
@@ -59,6 +60,8 @@ scoreboard players set $LobbyCountdown timers 10
 scoreboard players set $TotalFireworks var 3
 scoreboard objectives add events dummy
 scoreboard objectives add openChest minecraft.custom:open_chest
+scoreboard objectives add boilingWater dummy
+scoreboard players set $DamageInterval boilingWater 20
 
 execute unless score $SetConst var matches 1.. run function sg:general/set_const
 
@@ -80,13 +83,15 @@ team modify random collisionRule never
 team modify random prefix {"text":"\uE022","color":"white","shadow_color":0}
 
 #Forceload
-function sg:general/forceload/lobby
 function sg:general/forceload/cornucopia
 
 #Gamerules
 execute unless score $State gameState = $Dev gameState run function sg:general/gamerules
 
 #Initialize map on first load
-execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/load
+execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/options/set_default
 execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/options/reset
+execute unless score $Loaded var matches 1 if score $State gameState = $Lobby gameState run function sg:lobby/load
 scoreboard players set $Loaded var 1
+
+setworldspawn 35531 60 35496

@@ -5,3 +5,4 @@ function sg:lobby/death/respawn/arena/2 with storage sg:lobby_spawns
 scoreboard players operation @s inventoryState = $Lobby.Default inventoryState
 scoreboard players operation @s respawnState = $Lobby.Default respawnState
 tag @s remove SGArenaFighter
+attribute @s entity_interaction_range base set 5.5

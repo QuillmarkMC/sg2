@@ -14,3 +14,6 @@ $execute if score #Loaded chestRestock matches 1 unless score $ForceloadQueryChe
 
 execute unless score #Loaded chestRestock matches 1 run schedule function sg:game/chests/restock/loop/recursive/get_scheduled_idiot 1t replace
 execute if score #Loaded chestRestock matches 1 run function sg:game/chests/restock/loop/chest with storage sg:restock
+
+
+##NOT CALLED

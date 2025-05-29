@@ -1,1 +1,1 @@
-tellraw @s [{"text":"[!] ","color":"blue","bold": true},{"text": "What type of chests should be restocked: All, Cornucopia, or None.","color": "white","bold": false}]
+tellraw @s [{"text":"[?] ","color":"blue","bold": true},{"translate": "sg.lobby.options.actions.help.chest_restock_mode","color": "white","bold": false}]

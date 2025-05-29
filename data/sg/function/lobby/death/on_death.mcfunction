@@ -4,7 +4,7 @@ execute unless score @s click matches 1.. run title @s title "\uE019"
 
 function sg:lobby/effects/give
 
-execute unless score @s click matches 1.. run tellraw @a {"translate": "text.lobby.death_message","with": [{"selector": "@s"}]}
+execute unless score @s click matches 1.. run tellraw @a {"translate": "sg.lobby.death_message","with": [{"selector": "@s"}]}
 
 #set inventory state inside respawn state function
 execute if score @s respawnState = $Lobby.Default respawnState run function sg:lobby/death/respawn/default/spawn

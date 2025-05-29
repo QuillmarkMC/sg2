@@ -7,4 +7,4 @@ execute if score #TempTeam teamID < $MaxTeamSize options run return run function
 
 #else
 execute store result storage sg:teams random_data.Index int 1 run scoreboard players remove $TeamRandomIndex lobbyVar 1
-execute unless score $TeamRandomIndex lobbyVar matches ..-1 run function sg:lobby/teams/random/loop/get_id
+execute unless score $TeamRandomIndex lobbyVar matches ..-1 run function sg:lobby/teams/random/loop/get_id with storage sg:teams random_data

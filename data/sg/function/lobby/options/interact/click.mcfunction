@@ -1,5 +1,4 @@
-#TODO: uncomment this once options are fully implemented
-#execute unless score $State gameState = $Lobby gameState run return run advancement revoke @s only sg:lobby/click_option
+execute unless score $State gameState = $Lobby gameState run return run advancement revoke @s only sg:lobby/click_option
 
 execute store result storage sg:options Interaction.Time long 1 run time query gametime
 data modify storage sg:options Interaction.UUID set from entity @s UUID

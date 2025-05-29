@@ -1,1 +1,0 @@
-say sg:lobby/options/actions/start_game

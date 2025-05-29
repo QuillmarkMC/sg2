@@ -1,1 +1,1 @@
-tellraw @s [{"text":"[!] ","color":"blue","bold": true},{"text": "Number of seconds until PvP is enabled at the start of the match.","color": "white","bold": false}]
+tellraw @s [{"text":"[?] ","color":"blue","bold": true},{"translate": "sg.lobby.options.actions.help.grace_period","color": "white","bold": false}]

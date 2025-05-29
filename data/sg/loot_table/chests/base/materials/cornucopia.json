@@ -10,7 +10,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 100,
-            "value": "sg:memes/horn"
+            "value": "sg:chests/memes/horn"
           },
           {
             "type": "minecraft:item",

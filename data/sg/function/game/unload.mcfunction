@@ -4,7 +4,6 @@ kill @e[type=item_display,tag=SGCountdownTimer,limit=1]
 scoreboard players reset * death
 scoreboard players reset * deathDelayTimer
 scoreboard players reset * playerPosition
-scoreboard players reset * combatTimer
 scoreboard players set $CountdownTimer.State timers 0
 
 function sg:game/map_events/unload
@@ -19,6 +18,7 @@ schedule clear sg:game/end_game/end/transition
 schedule clear sg:game/start_countdown/update
 schedule clear sg:game/chests/music/loop
 schedule clear sg:game/map_events/check_loaded
+schedule clear sg:game/chests/restock/loop/recursive/get_scheduled_idiot
 
 bossbar set sg:border visible false
 bossbar set sg:loot visible false

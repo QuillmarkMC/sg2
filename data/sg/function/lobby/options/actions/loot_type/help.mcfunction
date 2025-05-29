@@ -1,1 +1,1 @@
-tellraw @s [{"text":"[!] ","color":"blue","bold": true},{"text": "What type of loot should be generated in chests: Pre-crafted items or materials needed to craft your own items.","color": "white","bold": false}]
+tellraw @s [{"text":"[?] ","color":"blue","bold": true},{"translate": "sg.lobby.options.actions.help.loot_type","color": "white","bold": false}]

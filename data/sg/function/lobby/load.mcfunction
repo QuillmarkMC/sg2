@@ -17,12 +17,12 @@ gamerule keepInventory true
 difficulty easy
 
 #resummon entities when all chunks are loaded
-function sg:lobby/entities/check_loaded
+function sg:lobby/entities/load
 
-function sg:lobby/options/set_default
 function sg:lobby/music/init
 function sg:lobby/arena/init
 function sg:lobby/death/respawn/init
+function sg:lobby/parkour/checkpoint/data
 
 function sg:lobby/teams/reset/delete_all
 function sg:lobby/teams/random/init

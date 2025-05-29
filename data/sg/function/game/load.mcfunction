@@ -19,7 +19,8 @@ effect clear @a
 function sg:game/effects/grace
 gamemode adventure @a[tag=SGPlaying]
 clear @a
-execute as @a run spawnpoint @s 0 127 1
+execute as @a run spawnpoint @s -1 127 1
+execute as @a run attribute @s entity_interaction_range base reset
 
 #map events
 function sg:game/map_events/load

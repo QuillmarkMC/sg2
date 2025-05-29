@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 100,
+            "value": "sg:chests/base/materials/uncommon"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 100,
+            "value": "sg:chests/base/crafted/uncommon",
+            "conditions": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "sg:options",
+                  "path": "Options.loot_type"
+                },
+                "range": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "phantom_membrane",
+            "functions": [
+              {
+                "function": "set_components",
+                "components": {
+                  "item_model": "sg:library_key",
+                  "custom_data": {"LibraryKey":true},
+                  "item_name": {"translate":"sg.game.item.library_key.name","color":"yellow","italic":false},
+                  "lore":[{"translate":"sg.game.item.library_key.lore","color":"gray","italic": false}]
+                }
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": -475,
+                  "max": -269
+                },
+                "y": {
+                  "min": 58,
+                  "max": 100
+                },
+                "z": {
+                  "min": -436,
+                  "max": -199
+                }
+              },
+              "dimension": "minecraft:overworld"
+            }
+          },
+          {
+            "condition": "random_chance",
+            "chance": 0.05
+          },
+          {
+            "condition": "minecraft:value_check",
+             "value": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$LibraryDoor"
+                },
+              "score": "events"
+            },
+            "range": 0
+          }
+        ]
+      }
+    ]
+  }
