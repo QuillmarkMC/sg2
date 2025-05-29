@@ -1,6 +1,6 @@
 execute if score $Debug var matches 2.. run say sg:game/chests/restock/loop/begin
 
-execute if score $Debug var matches 1.. run tellraw @a[tag=Admin] [{"text":"[!] ","color":"gold","bold": true},{"translate":"text.admin.chest.restock.begin","bold": false,"color": "white"}]
+execute if score $Debug var matches 1.. run tellraw @a[tag=Admin] [{"text":"[!] ","color":"gold","bold": true},{"translate":"sg.admin.chest.restock.begin","bold": false,"color": "white"}]
 scoreboard players set $InProgress chestRestock 1
 scoreboard players set $Timer chestRestock 0
 execute if score $Restocking chestRestock matches 1 run scoreboard players set $CornucopiaLootState chestRestock 1

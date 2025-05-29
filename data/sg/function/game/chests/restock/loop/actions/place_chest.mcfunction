@@ -1,5 +1,5 @@
 execute if score $Debug var matches 3.. run say sg:game/chests/restock/loop/actions/place_chest
-$execute if score $Debug var matches 1.. unless loaded $(xyz) run tellraw @a[tag=Admin] [{"text":"[!] ","color":"gold","bold": true},{"translate":"text.admin.chest.error.place_failed","bold": false,"color": "white","with": [{"text": "$(xyz)"}]}]
+$execute if score $Debug var matches 1.. unless loaded $(xyz) run tellraw @a[tag=Admin] [{"text":"[!] ","color":"gold","bold": true},{"translate":"sg.admin.chest.error.place_failed","bold": false,"color": "white","with": [{"text": "$(xyz)"}]}]
 
 #called with storage sg:restock
 #only runs on first chest stock
