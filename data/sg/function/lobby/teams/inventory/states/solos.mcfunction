@@ -1,4 +1,4 @@
-item replace entity @s enderchest.0 with air
+item replace entity @s enderchest.0 with phantom_membrane[item_model="lobby:menu/gui/solo_team_select",custom_data={TeamSelect:true},tooltip_display={hide_tooltip:true}]
 item replace entity @s enderchest.1 with air
 item replace entity @s enderchest.2 with air
 item replace entity @s enderchest.3 with air
@@ -16,7 +16,7 @@ item replace entity @s enderchest.14 with air
 item replace entity @s enderchest.15 with phantom_membrane[item_model="lobby:menu/gui/spectate",custom_data={TeamSelect:true,Spectate:true},lore=[{"translate": "sg.lobby.teams.item.spectator.lore","color": "gray","italic": true}],custom_name={"translate":"sg.lobby.teams.item.spectator.name","color": "gray","italic": false,"bold": true}]
 item replace entity @s enderchest.16 with air
 item replace entity @s enderchest.17 with air
-item replace entity @s enderchest.18 with phantom_membrane[item_model="lobby:menu/gui/solo_team_select",custom_data={TeamSelect:true},tooltip_display={hide_tooltip:true}]
+item replace entity @s enderchest.18 with air
 item replace entity @s enderchest.19 with air
 item replace entity @s enderchest.20 with air
 item replace entity @s enderchest.21 with air
