@@ -11,5 +11,13 @@
                 "path": "advancement/.*"
             }
         ]
+    },
+    "overlays": {
+        "entries": [
+            {
+                "formats": 71,
+                "directory": "1.21.5"
+            }
+        ]
     }
 }
