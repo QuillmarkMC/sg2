@@ -16,7 +16,6 @@ gamerule doWeatherCycle false
 gamerule drowningDamage true
 gamerule fireDamage true
 gamerule freezeDamage false
-gamerule locatorBar false
 gamerule maxEntityCramming 999
 gamerule mobGriefing false
 gamerule playersSleepingPercentage 101
