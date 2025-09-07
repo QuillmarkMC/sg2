@@ -7,6 +7,7 @@ execute unless score $State gameState matches 1.. run scoreboard players operati
 scoreboard objectives add var dummy
 execute unless score $Debug var matches 1.. run scoreboard players set $Debug var 0
 execute unless score $EnforcePlayerCap var matches 0.. run scoreboard players set $EnforcePlayerCap var 1
+execute unless score $ForceAllChestSpawns var matches 0.. run scoreboard players set $ForceAllChestSpawns var 0
 
 scoreboard objectives add math dummy
 scoreboard players set #2 math 2
