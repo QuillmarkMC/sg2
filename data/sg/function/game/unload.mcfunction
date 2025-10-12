@@ -1,4 +1,5 @@
 kill @e[type=marker,tag=SGSpawnMarker]
+kill @e[type=marker,tag=SGSpawnCageMarker]
 kill @e[type=item_display,tag=SGCountdownTimer,limit=1]
 
 scoreboard players reset * death

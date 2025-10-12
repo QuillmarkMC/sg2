@@ -6,6 +6,7 @@ execute if score $PlayerCount var >= $MAX_PLAYERS var run return run function sg
 scoreboard players add $PlayerCount var 1
 #teleport current player to spawn position
 execute at @e[type=marker,tag=NextPlayerSpawnPosition,limit=1] run tp @s ~ ~1.5 ~ facing entity @e[type=armor_stand,tag=PlatformCenter,limit=1]
+execute at @s summon marker run tag @s add SGSpawnCageMarker
 kill @e[type=marker,tag=NextPlayerSpawnPosition,limit=1]
 tag @s remove SGNotSpawned
 
