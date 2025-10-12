@@ -15,6 +15,7 @@ tag @s remove SGArenaFighter
 tag @s remove sgdev.Joined
 tag @s remove SGDeadPlayer
 tag @s remove SGMarkedForDeath
+tag @s remove SGGraceEffects
 #tag @s remove Admin
 function sg:lobby/options/trigger/reset_tags
 scoreboard players reset @s teamID
