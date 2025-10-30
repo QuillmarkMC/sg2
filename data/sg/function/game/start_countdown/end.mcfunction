@@ -7,7 +7,13 @@ summon lightning_bolt 0 71 0
 execute as @a at @s run playsound block.anvil.place ambient @s ~ ~ ~ 0.75
 
 #Unleash the beasts
-execute as @a[tag=SGPlaying,gamemode=!spectator] at @s run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace brown_stained_glass
+#execute as @a[tag=SGPlaying,gamemode=!spectator] at @s run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace brown_stained_glass
+execute at @e[type=marker,tag=SGSpawnCageMarker] run fill ~1 ~3 ~1 ~-1 ~-2 ~-1 air replace brown_stained_glass
+kill @e[type=marker,tag=SGSpawnCageMarker]
+
+#remove saturation, apply short hunger effect to get rid of excess saturation
+effect clear @a[tag=SGPlaying] saturation
+effect give @a[tag=SGPlaying] hunger 5 100 true
 
 #destroy timer model
 kill @e[type=item_display,tag=SGCountdownTimer,limit=1]

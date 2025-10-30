@@ -15,6 +15,7 @@ tag @s remove SGArenaFighter
 tag @s remove sgdev.Joined
 tag @s remove SGDeadPlayer
 tag @s remove SGMarkedForDeath
+tag @s remove SGGraceEffects
 #tag @s remove Admin
 function sg:lobby/options/trigger/reset_tags
 scoreboard players reset @s teamID
@@ -28,4 +29,4 @@ scoreboard players reset @s combatTimer
 execute if score $State gameState = $Lobby gameState run function sg:general/player/reset/lobby
 execute if score $State gameState = $Game gameState run function sg:general/player/reset/game
 
-execute at @s run spawnpoint @s ~ ~ ~ ~
+execute at @s run spawnpoint @s ~ ~ ~ ~ ~

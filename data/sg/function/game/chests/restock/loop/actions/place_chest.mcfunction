@@ -6,6 +6,7 @@ $execute if score $Debug var matches 1.. unless loaded $(xyz) run tellraw @a[tag
 execute store result bossbar sg:loot value run scoreboard players add $ProgressBar chestRestock 1
 
 $execute store success score #SpawnChest chestRestock if predicate {condition:"random_chance",chance:$(SpawnChance)}
+execute if score $ForceAllChestSpawns var matches 1 run scoreboard players set #SpawnChest chestRestock 1
 
 $execute if score #SpawnChest chestRestock matches 1 if data storage sg:restock {Quality:"anvil"} run return run setblock $(xyz) anvil[facing=$(Facing)]
 $execute unless score #SpawnChest chestRestock matches 1 if data storage sg:restock {Quality:"anvil"} run setblock $(xyz) air

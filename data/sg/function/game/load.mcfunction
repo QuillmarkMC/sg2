@@ -16,7 +16,8 @@ function sg:game/spawning/players/check_mode
 function sg:game/spawning/spectating/init
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectating/join
 effect clear @a
-function sg:game/effects/grace
+execute as @a[tag=SGPlaying] run function sg:game/effects/grace
+scoreboard players set $GracePeriodActive var 1
 gamemode adventure @a[tag=SGPlaying]
 clear @a
 execute as @a run spawnpoint @s -1 127 1
