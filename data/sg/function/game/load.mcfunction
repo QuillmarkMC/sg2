@@ -24,17 +24,15 @@ execute as @a[tag=SGPlaying] run function sg:game/effects/grace
 scoreboard players set $GracePeriodActive var 1
 gamemode adventure @a[tag=SGPlaying]
 clear @a
-#TODO:
-execute as @a run spawnpoint @s 1 92 1
+execute as @a run spawnpoint @s -1 127 1
 execute as @a run attribute @s entity_interaction_range base reset
 
 #map events
 function sg:game/map_events/load
 function sg:game/map_events/check_loaded
 
-#TODO:
 #timer model
-summon item_display 0.5 99.0 0.5 {teleport_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:pufferfish_bucket",count:1,components:{"minecraft:custom_model_data":{floats:[15]},item_model:"sg:timer"}},Tags:["SGCountdownTimer"]}
+summon item_display 0.5 79.5 0.5 {teleport_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:pufferfish_bucket",count:1,components:{"minecraft:custom_model_data":{floats:[15]},item_model:"sg:timer"}},Tags:["SGCountdownTimer"]}
 scoreboard players set $CountdownTimer.State timers 1
 
 #set number of players
