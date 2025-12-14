@@ -2,7 +2,7 @@
     "pack": {
         "min_format": [88,0],
         "max_format": [94,1],
-        "description": "Quillmark CORE survival games datapack"
+        "description": "Datapack for Desolate Desert"
     },
     "filter": {
         "block": [

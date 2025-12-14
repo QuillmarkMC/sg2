@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "sg:game/out_of_bounds/cornucopia"
+            "name": "sg:game/out_of_bounds/pyramid"
         }
     ]
   }
