@@ -1,2 +1,4 @@
-execute if data storage sg:options {Options:{soundtrack:0}} run return run function sg:lobby/options/actions/music_select/set_nocturne
-execute if data storage sg:options {Options:{soundtrack:1}} run return run function sg:lobby/options/actions/music_select/set_desolate
+#TODO: when nc releases
+#execute if data storage sg:options {Options:{soundtrack:0}} run return run function sg:lobby/options/actions/music_select/set_nocturne
+#execute if data storage sg:options {Options:{soundtrack:1}} run return run function sg:lobby/options/actions/music_select/set_desolate
+function sg:lobby/options/actions/music_select/set_desolate
