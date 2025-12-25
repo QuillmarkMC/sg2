@@ -4,5 +4,6 @@ function sg:game/map_events/donut/entrance/reset
 function sg:game/map_events/donut/exit/reset
 function sg:game/map_events/library/close
 function sg:game/map_events/easter_eggs/sandcastle
+function sg:game/map_events/temple/fade
 
 function sg:game/map_events/unload
