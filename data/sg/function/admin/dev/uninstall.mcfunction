@@ -7,7 +7,7 @@ scoreboard objectives remove sgdev.chestVar
 scoreboard objectives remove sgdev.math
 scoreboard objectives remove sgdev.array
 scoreboard objectives remove sgdev.stats
-scoreboard objectives remove sgdev.eggs
+scoreboard objectives remove sgdev.items
 scoreboard objectives remove sgdev.toggle_chest_place
 scoreboard objectives remove sgdev.chest_place
 scoreboard objectives remove sgdev.demo
@@ -19,13 +19,6 @@ scoreboard objectives remove sgdev.rare
 scoreboard objectives remove sgdev.epic
 scoreboard objectives remove sgdev.cornucopia
 scoreboard objectives remove sgdev.loot
-
-team remove common
-team remove uncommon
-team remove rare
-team remove epic
-team remove legendary
-team remove cornucopia
-team remove anvil
+scoreboard objectives remove sgdev.dfu
 
 tag @a add SGResetPlayer

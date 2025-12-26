@@ -1,5 +1,5 @@
 #cannot kill player the same tick they join the server
 #so instead attempt kill them every tick until it works
-gamerule showDeathMessages false
+gamerule show_death_messages false
 kill @s
-gamerule showDeathMessages true
+gamerule show_death_messages true
