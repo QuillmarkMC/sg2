@@ -28,3 +28,4 @@ gamerule projectiles_can_break_blocks false
 gamerule max_command_sequence_length 2147483647
 gamerule command_blocks_work true
 gamerule pvp true
+gamerule random_tick_speed 0
