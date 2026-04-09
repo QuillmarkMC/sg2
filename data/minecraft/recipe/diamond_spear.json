@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "#": "minecraft:stick",
-    "X": "#minecraft:stone_tool_materials"
+    "X": "#minecraft:diamond_tool_materials"
   },
   "pattern": [
     "  X",
@@ -11,8 +11,7 @@
     "#  "
   ],
   "result": {
-    "count": 1,
-    "id": "minecraft:stone_spear"
+    "id": "minecraft:diamond_spear"
   },
   "show_notification": false
 }
