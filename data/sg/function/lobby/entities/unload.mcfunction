@@ -14,6 +14,8 @@ forceload remove 35549 35543
 #guapo tank
 forceload remove 35507 35496
 forceload remove 35503 35496
+#research beetle
+forceload remove 35552 35471
 #credits
 forceload remove 35609 35509
 forceload remove 35609 35483

@@ -93,7 +93,7 @@
           },
           {
             "type": "loot_table",
-            "weight": 250,
+            "weight": 200,
             "value": "sg:chests/food/common"
           }
         ]

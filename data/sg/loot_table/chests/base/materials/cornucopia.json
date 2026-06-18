@@ -75,7 +75,7 @@
           },
           {
             "type": "loot_table",
-            "weight": 400,
+            "weight": 300,
             "value": "sg:chests/food/cornucopia"
           }
         ]
