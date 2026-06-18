@@ -8,8 +8,8 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "entity_type": "minecraft:interaction",
-                "nbt": "{Tags:[\"SGCreditTranslators\"]}"
+                "type": "minecraft:interaction",
+                "nbt": "{Tags:[\"SGLobbyOptions\"]}"
               }
             }
           ]
@@ -17,6 +17,6 @@
       }
     },
     "rewards": {
-      "function": "sg:lobby/credits/interact/translators"
+      "function": "sg:lobby/options/interact/click"
     }
   }
