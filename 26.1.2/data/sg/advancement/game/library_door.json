@@ -8,8 +8,8 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "entity_type": "minecraft:interaction",
-                "nbt": "{Tags:[\"SGCreditChiefCo1\"]}"
+                "type": "minecraft:interaction",
+                "nbt": "{Tags:[\"SGLibraryDoor\"]}"
               }
             }
           ]
@@ -17,7 +17,7 @@
       }
     },
     "rewards": {
-      "function": "sg:lobby/credits/interact/chiefco1"
+      "function": "sg:game/map_events/library/click"
     }
   }
   
