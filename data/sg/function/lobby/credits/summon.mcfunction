@@ -47,7 +47,7 @@ summon minecraft:item_display 35607.168770857155 79.77818707901703 35508.3291632
 summon minecraft:item_display 35607.00036805123 80.52818707901703 35508.343583106995 {Tags:["SGLobbyCredits"],fall_distance: 0.0d, item: {components: {"minecraft:item_model": "lobby:player_statues/capes/mapmaker"}, count: 1, id: "minecraft:phantom_membrane"}, transformation: {left_rotation: [0.037475914f, 0.44580647f, -0.018684806f, 0.89414936f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0000005f, 0.99999875f, 0.99999756f], translation: [0.0f, 0.0f, 0.0f]}}
 summon interaction 35607.11585130142 79.0625 35508.445565556896 {width:0.75f,height:2.0f,response:true,Tags:["SGLobbyCredits","SGCreditStrongis13"]}
 #command block
-summon minecraft:block_display 35607.6005859375 80.27818707901703 35508.537841796875 {Tags:["SGLobbyCredits"],block_state: {Name: "minecraft:command_block", Properties: {conditional: "false", facing: "north"}}, fall_distance: 0.0d, transformation: {left_rotation: [0.692187f, -0.36728778f, 0.109791234f, 0.6114923f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5000003f, 0.5000001f, 0.50000006f], translation: [0.0f, 0.0f, 0.0f]}}
+summon minecraft:block_display 35607.6005859375 80.27818707901703 35508.537841796875 {Tags:["SGLobbyCredits"],block_state: {id: "minecraft:command_block", properties: {conditional: "false", facing: "north"}}, fall_distance: 0.0d, transformation: {left_rotation: [0.692187f, -0.36728778f, 0.109791234f, 0.6114923f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5000003f, 0.5000001f, 0.50000006f], translation: [0.0f, 0.0f, 0.0f]}}
 
 ##Cyg/Charlie/Will Table Deco
 #penguin
