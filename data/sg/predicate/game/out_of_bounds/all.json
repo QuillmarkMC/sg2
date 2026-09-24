@@ -1,9 +1,6 @@
 {
-    "condition": "minecraft:any_of",
+    "type": "minecraft:any_of",
     "terms": [
-        {
-            "condition": "reference",
-            "name": "sg:game/out_of_bounds/cornucopia"
-        }
+        "sg:game/out_of_bounds/cornucopia"
     ]
-  }
+}

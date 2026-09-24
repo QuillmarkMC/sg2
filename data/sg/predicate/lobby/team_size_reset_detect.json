@@ -1,22 +1,22 @@
 {
-    "condition": "any_of",
+    "type": "any_of",
     "terms": [
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "lobby"
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "spectator"
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "ready"
