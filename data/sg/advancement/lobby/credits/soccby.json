@@ -1,23 +1,24 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_interacted_with_entity",
-        "conditions": {
-          "entity": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "entity_type": "minecraft:interaction",
-                "nbt": "{Tags:[\"SGCreditSoccby\"]}"
-              }
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "minecraft:interaction",
+                        "entity_tags": {
+                            "all_of": [
+                                "SGCreditSoccby"
+                            ]
+                        }
+                    }
+                }
             }
-          ]
         }
-      }
     },
     "rewards": {
-      "function": "sg:lobby/credits/interact/soccby"
+        "function": "sg:lobby/credits/interact/soccby"
     }
-  }
-  
+}
