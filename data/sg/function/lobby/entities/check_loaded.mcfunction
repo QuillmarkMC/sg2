@@ -17,6 +17,8 @@ execute unless loaded 35549 53 35543 run scoreboard players set $CheckLoaded var
 #guapo tank
 execute unless loaded 35507 62 35496 run scoreboard players set $CheckLoaded var 0
 execute unless loaded 35503 62 35496 run scoreboard players set $CheckLoaded var 0
+#research beetle
+execute unless loaded 35552 61 35471 run scoreboard players set $CheckLoaded var 0
 #credits
 execute unless loaded 35609 79 35509 run scoreboard players set $CheckLoaded var 0
 execute unless loaded 35609 79 35483 run scoreboard players set $CheckLoaded var 0

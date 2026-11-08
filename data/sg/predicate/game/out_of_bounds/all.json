@@ -1,6 +1,6 @@
 {
     "type": "minecraft:any_of",
     "terms": [
-        "sg:game/out_of_bounds/cornucopia"
+            "sg:game/out_of_bounds/pyramid"
     ]
 }
