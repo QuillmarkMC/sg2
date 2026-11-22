@@ -2,6 +2,7 @@
     "values":[
         "text_display",
         "interaction",
-        "item_display"
+        "item_display",
+        "block_display"
     ]
 }

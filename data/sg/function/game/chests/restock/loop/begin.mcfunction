@@ -12,5 +12,5 @@ execute if score $Restocking chestRestock matches 0 run function sg:general/musi
 
 execute store result storage sg:restock MasterChunkIndex int 1 run scoreboard players remove $MasterChunkIndex chestRestock 1
 execute unless score $MasterChunkIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/chunk with storage sg:restock
-execute if score $MasterChunkIndex chestRestock matches ..-1 run function sg:game/chests/restock/loop/finish
-schedule function sg:game/chests/restock/loop/recursive/get_scheduled_idiot 1t replace
+execute if score $MasterChunkIndex chestRestock matches ..-1 if score $InProgress chestRestock matches 1 run function sg:game/chests/restock/loop/finish
+execute if score $InProgress chestRestock matches 1 run schedule function sg:game/chests/restock/loop/recursive/get_scheduled_idiot 1t replace
