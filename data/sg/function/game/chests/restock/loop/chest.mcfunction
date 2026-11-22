@@ -8,6 +8,7 @@ $data modify storage sg:restock xyz set from storage sg:chests Chunks[$(ChunkInd
 $data modify storage sg:restock Quality set from storage sg:chests Chunks[$(ChunkIndex)].Chests[$(ChestIndex)].Quality
 $data modify storage sg:restock SpawnChance set from storage sg:chests Chunks[$(ChunkIndex)].Chests[$(ChestIndex)].SpawnChance
 $data modify storage sg:restock Facing set from storage sg:chests Chunks[$(ChunkIndex)].Chests[$(ChestIndex)].Facing
+$data modify storage sg:restock Waterlogged set from storage sg:chests Chunks[$(ChunkIndex)].Chests[$(ChestIndex)].Waterlogged
 #place chest blocks on first stock of game, only restock existing chests all future restocks
 execute unless score $Restocking chestRestock matches 1 run function sg:game/chests/restock/loop/actions/place_chest with storage sg:restock
 execute if score $Restocking chestRestock matches 1 run function sg:game/chests/restock/loop/actions/set_loot_table with storage sg:restock
